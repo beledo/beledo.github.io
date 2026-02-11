@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nonna Giustina</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#fefefd",
+                "secondary": "#2d3c46",
+                "accent-gold": "#C5A059",
+                "background-light": "#f8f6f6",
+                "background-dark": "#221010",
+                "surface-dark": "#2d1616",
+              },
+              fontFamily: {
+                "display": ["Work Sans"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Work Sans', sans-serif; }
+        .glass-nav {
+            backdrop-filter: blur(10px);
+            background-color: rgba(34, 16, 16, 0.85);
+        }
+        .text-shadow-lg {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 selection:bg-primary selection:text-white">
+<!-- Sticky Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-white/5">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="text-primary text-3xl font-bold tracking-tighter">Nonna Giustina</span>
+<span class="text-accent-gold text-xs uppercase tracking-[0.3em] mt-1 font-medium">1908</span>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-sm uppercase tracking-widest hover:text-primary transition-colors" href="#specialties">Specialties</a>
+<a class="text-sm uppercase tracking-widest hover:text-primary transition-colors" href="#menu">Menu</a>
+<a class="text-sm uppercase tracking-widest hover:text-primary transition-colors" href="#reviews">Reviews</a>
+<a class="text-sm uppercase tracking-widest hover:text-primary transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="https://youtube.com" class="bg-secondary hover:bg-red-700 text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 inline-block text-center">
+    RESERVE A TABLE
+</a>
+
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Artisanal Wood Fired Pizza" class="w-full h-full object-cover" data-alt="Gourmet wood-fired pizza with fresh basil and mozzarella" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5LhYA7mUtsEvSRiDp3znozF9rfRkD0NRChiRkjDFI-viKfybPPpu1MpYlthTe4S_k99vaZDKLrWBbM9q4UtBF7kfyTrw7EXpnY91_n07V6lsLwpJEynqYqWAdfbPPmhspqULrQe6jvNCi7jHOzpx4ogzbAJ9Dl0z5BH1ng8taZ-XiTNEeoCOO0ViqZ0KDnRNpTgYlDaKL_0tWuhDF7zQHyjKEiZfFJRhQsCcvv9Z_45xL-hE-SSE3erRKUVAHEWd2iI2qfsna_LcR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent"></div>
+</div>
+<div class="relative z-10 text-center px-4 max-w-4xl">
+<span class="inline-block px-4 py-1 border border-accent-gold text-accent-gold text-xs tracking-[0.5em] uppercase mb-6 rounded-full bg-accent-gold/5">Est. 1994 Milano</span>
+<h1 class="text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight text-shadow-lg leading-none">
+                Authentic Hearth.<br/>
+<span class="text-primary">Modern Elegance.</span>
+</h1>
+<p class="text-xl text-slate-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Experience the soul of Italy through our artisanal wood-fired ovens and generations of secret family recipes.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="w-full sm:w-auto bg-secondary text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-red-700 transition-colors">
+                    Explore Menu
+                </button>
+<button class="w-full sm:w-auto bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-white/20 transition-colors">
+                    The Story
+                </button>
+</div>
+</div>
+<div 
+  onclick="window.scrollTo({ 
+    top: document.getElementById('specialties').offsetTop, 
+    behavior: 'smooth' 
+  })"
+  class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer"
+>
+  <span class="material-symbols-outlined text-white/50 text-4xl">
+    keyboard_double_arrow_down
+  </span>
+</div>
+
+
+
+</header>
+<!-- Specialties Section -->
+<section class="py-24 bg-background-light dark:bg-background-dark" id="specialties">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-4">
+<div class="max-w-xl">
+<h2 class="text-accent-gold text-sm tracking-[0.3em] uppercase mb-2 font-semibold">Our Signatures</h2>
+<h3 class="text-4xl md:text-5xl font-bold dark:text-white">Crafted by Hand, <br/> Perfected by Fire</h3>
+</div>
+<div class="h-1 bg-primary w-24 mb-4"></div>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Pizza Card -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
+<img alt="La Pizza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Traditional Neapolitan pizza with leopard spotting on crust" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZlDF-swdRXQQASN6arIfDWWZ-k-gtwb9xYjyz9PbRAdPgeQQscqulary83bTWUfHrzmmdYjyyD-0GKrUsElC2KimbL0Uzh9zv3cGkBzMtlorhrJxJ--LqfzomjKPqoTk0kAAhiAViyiMozaca5mHEnjYRiGJQAwWzs01oLwYiu_Mck3z9xxgLBRSj0rSVMjgysIC9BVNLTiYcenUUqGpygQDNKopcEki3-oPbNNI318m4nvTMD7xvWXV75_-38xeXBUj5NRXT_6AW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<h4 class="text-white text-3xl font-bold mb-3">La Pizza</h4>
+<p class="text-slate-300 mb-6 max-w-sm font-light">
+                            72-hour cold fermented dough, San Marzano tomatoes, and hand-stretched mozzarella baked at 450°C.
+                        </p>
+<a class="inline-flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform" href="#">
+                            VIEW PIZZA MENU <span class="material-symbols-outlined ml-2">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Pasta Card -->
+<div class="group relative overflow-hidden rounded-xl aspect-[4/5]">
+<img alt="La Pasta" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Plated artisan pasta with rich tomato sauce and herbs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd8kvt0yNtfyFSLnRWvy_PhVfP50sv_Jgc2qyMYXs0ejyBFnHFhw05jEFn1MRWhinukSfF7GoP5i0gII7zolYhOfkQWXpy6NWGYdyfPJVQV-pQf8W1BwyCiAJuRROocSeBLo4VdAOXn-RFATkgsMTZBWZdOu6PWgEj_280ys8MwptSkpeppUDjr-0dbIpVGZV8Bh0AkbpoM1QzpBM552O43mK_zYYgeEeXAMC6T08lGsMLPcnB8z2A-2Kfv8O5Q-cSCnwG5LmNIXOJ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<h4 class="text-white text-3xl font-bold mb-3">La Pasta</h4>
+<p class="text-slate-300 mb-6 max-w-sm font-light">
+                            House-made bronze-cut pasta tossed in sauces slow-cooked for hours using the season's finest imports.
+                        </p>
+<a class="inline-flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform" href="#">
+                            VIEW PASTA MENU <span class="material-symbols-outlined ml-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Carousel Section (Atmosphere) -->
+<section class="bg-surface-dark py-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 mb-12">
+<h2 class="text-center text-3xl font-bold dark:text-white uppercase tracking-widest">The Atmosphere</h2>
+<div class="w-20 h-1 bg-primary mx-auto mt-4"></div>
+</div>
+<div class="flex gap-4 px-6 overflow-x-auto pb-8 scrollbar-hide no-scrollbar">
+<div class="min-w-[300px] md:min-w-[500px] h-80 rounded-xl overflow-hidden shadow-2xl">
+<img alt="Restaurant Interior" class="w-full h-full object-cover" data-alt="Dimly lit elegant restaurant interior with wine racks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbcYHZw87Xu8J2bYbRDtn5-mmas-erUngecZsJaChUcii2xTbmqAbRy75Q_CEMWJN3M8drjytWIF6K9nUe8u7VmE91KgaVaCRaY7B-m3FW-JHmDuDqKDxLFa2PHiPR-pJDKQQwPcsV9HNFMBElFmdqU0JETpoSAU4zS6PHBkbpBf6ZpTbdiKTSYHWGvTMs104nC9zBkch8cs_0P8xqG1aqWZi6yovmmAWZIfgxRkdhmDs4ZsazgeFiwfiLKeD2E9hLJ3Anve5QGONB"/>
+</div>
+<div class="min-w-[300px] md:min-w-[500px] h-80 rounded-xl overflow-hidden shadow-2xl">
+<img alt="Bar Counter" class="w-full h-full object-cover" data-alt="Modern cocktail bar with amber lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0PZl6hQ23P_HeJdvVB0dOYTc_hugRwbjVjgwDLnsXkF7rVqxUz5Wmihi6V6VTttGvbbJfbEaqrLDaDNWztRJ3BuwU5pzxN_y_5Qa5nSSq2LG-i1YIjDuQ19Ze4jJligRXrWQDru1J_0z40rT2QWYDcRvhnOiVlHamRzZXWRQeQLKl5ykFcQC1L2VmhRIA2eIekebCMlq2xCIX43fTMF_lXC7tQdnF9Cj5hoFZGXwtQw_7ZWxJjHV3fpYxC1xh6uDV-oa1bF1mOPRn"/>
+</div>
+<div class="min-w-[300px] md:min-w-[500px] h-80 rounded-xl overflow-hidden shadow-2xl">
+<img alt="Private Table" class="w-full h-full object-cover" data-alt="Romantic candlelit dinner table setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNVKGapkr8N2PFpT_H0R8ggNteEZRWppvRVteDtYZDSNeMIihWho_9JRQbgyZpn4O2NmRd8j8Ijlw_QAVVYhlPILxr8bHff-q9Vet9z-TcVLmHhZJIByvtXQesqeaT_H6afXhr41TB8NINmMnaj_zQ3lT7DmdpmNtSMUpWOdRLNSelaep2j09Bmu9Dt7m3lhw0UMLXabIRm11fQvLwfdFMVsbeNPHqWOwzgadk6BPvSK3iODZLIWkoEZQRW7vZzdrVip2i-6r0LGlx"/>
+</div>
+<div class="min-w-[300px] md:min-w-[500px] h-80 rounded-xl overflow-hidden shadow-2xl">
+<img alt="Open Kitchen" class="w-full h-full object-cover" data-alt="Chef working at a pizza oven with flames" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCX-dI2w1bIFjvX2damXWdM27eHCf_9vfFdWxhf6Uhv_u2orVU-jLFjv_PfZEAC6glggQedeT6hcLq5Owa8oQwo48piTlUd63yQ0XrX7H7Y1smWYSwA7JFGP832hw_ORSB2uj9cVT1MUHXsQwMR7VkPLBx4CwTfVHSV4YaAb4O3CqafGAGkqzR-plsPILyoq9otHd-rEgfIP2D8EgA5RhlNnoQ4-ySALfs5jQeKYisDVGOccbhomqJaCkqd1BaKnLQ5hYB602VXETIF"/>
+</div>
+</div>
+</section>
+<!-- Customer Reviews -->
+<section class="py-24" id="reviews">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-3 gap-12 items-center">
+<div class="lg:col-span-1">
+<h2 class="text-accent-gold text-sm tracking-[0.3em] uppercase mb-2 font-semibold">Testimonials</h2>
+<h3 class="text-4xl font-bold dark:text-white mb-6">What our guests are saying</h3>
+<p class="text-slate-400 mb-8 font-light">We pride ourselves on providing an unforgettable culinary experience. Rated 4.9/5 stars across all major platforms.</p>
+<div class="flex gap-6 grayscale opacity-60">
+<div class="flex flex-col items-center">
+<span class="text-xs uppercase tracking-tighter mb-2">Review us on</span>
+<div class="h-8 w-24 bg-white/10 rounded-md flex items-center justify-center p-2">
+<span class="font-bold text-white text-xs">GOOGLE</span>
+</div>
+</div>
+<div class="flex flex-col items-center">
+<span class="text-xs uppercase tracking-tighter mb-2">Review us on</span>
+<div class="h-8 w-24 bg-white/10 rounded-md flex items-center justify-center p-2">
+<span class="font-bold text-white text-xs">TripAdvisor</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-2 grid md:grid-cols-2 gap-6">
+<!-- Review 1 -->
+<div class="bg-surface-dark p-8 rounded-xl border border-white/5 shadow-xl">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="text-slate-300 italic mb-6">"The best truffle pasta I've ever had outside of Florence. The atmosphere is cozy yet incredibly high-end. A must-visit!"</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">JD</div>
+<div>
+<h5 class="font-bold text-white">James Dalton</h5>
+<p class="text-xs text-slate-500 uppercase">Local Guide</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-dark p-8 rounded-xl border border-white/5 shadow-xl">
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="text-slate-300 italic mb-6">"Their Diavola pizza has the perfect level of spice. The crust is thin, airy, and has that perfect char. Amazing wine list too."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">SR</div>
+<div>
+<h5 class="font-bold text-white">Sofia Rossi</h5>
+<p class="text-xs text-slate-500 uppercase">TripAdvisor Reviewer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer / Contact -->
+<footer class="bg-background-dark border-t border-white/5 pt-20 pb-10" id="contact">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-12 mb-20">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<span class="text-primary text-2xl font-bold tracking-tighter">Nonna Giustina</span>
+<span class="text-accent-gold text-[10px] uppercase tracking-[0.3em] font-medium">1908</span>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed mb-6">
+                        Bringing the authentic flavors of Milan to your table since 1994. Experience fine Italian dining in the heart of the city.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+</div>
+</div>
+<div>
+<h6 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Opening Hours</h6>
+<ul class="text-slate-400 text-sm space-y-3">
+<li class="flex justify-between"><span>Thu - Sat</span> <span>19:00 - 23:00</span></li>
+<li class="flex justify-between"><span>Sunday</span> <span>14:00 - 17:00</span></li>
+<li class="text-accent-gold mt-4 font-medium italic">Closed on Mondays</li>
+</ul>
+</div>
+<div>
+<h6 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Quick Links</h6>
+<ul class="text-slate-400 text-sm space-y-3">
+<li><a class="hover:text-primary transition-colors" href="#">Digital Menu</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Reservations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Private Events</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Location</h6>
+<div class="rounded-lg overflow-hidden h-32 mb-4 bg-white/5">
+<iframe
+  class="w-full h-full opacity-50 hover:grayscale transition-all"
+  src="https://www.google.com/maps?q=Avenida+Joan+Miró+98,+07015+Palma+de+Mallorca&output=embed"
+  loading="lazy"
+  style="border:0;">
+</iframe>
+
+</div>
+<p class="text-slate-400 text-xs">
+                        Av. Joan Mirò 98,<br/>
+                        07015 Palma de Mallorca, Spain
+                    </p>
+</div>
+</div>
+<div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-600 text-[10px] uppercase tracking-widest">
+<p>© 2026 Nonna Giustina. All Rights Reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- WhatsApp Floating Button -->
+<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform active:scale-90 group" href="https://wa.me/yournumber">
+<svg fill="currentColor" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.319 1.592 5.548 0 10.058-4.51 10.06-10.059.002-2.696-1.047-5.23-2.956-7.139-1.909-1.909-4.442-2.959-7.138-2.96-5.551 0-10.062 4.511-10.065 10.061-.001 2.105.56 4.14 1.621 5.924l-.991 3.619 3.75-.983l-.001-.001zm10.115-6.733c-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.668.149-.198.297-.767.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"></path>
+</svg>
+<span class="absolute right-20 bg-white text-background-dark py-2 px-4 rounded-lg text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-xl border border-background-dark/10 pointer-events-none">
+            Chat with us on WhatsApp
+        </span>
+</a>
+</body></html>
