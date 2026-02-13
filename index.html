@@ -17,12 +17,13 @@
           theme: {
             extend: {
               colors: {
-                "primary": "#fefefd",
-                "secondary": "#2d3c46",
-                "accent-gold": "#C5A059",
-                "background-light": "#f8f6f6",
-                "background-dark": "#221010",
-                "surface-dark": "#2d1616",
+                "primary": "#bdc042",
+                "secondary": "#c1c53a",
+                "primary-dark": "#a6aa38",
+                "accent-gold": "#bdc042",
+                "background-light": "#f5f3eb",
+                "background-dark": "#0f1a12",
+                "surface-dark": "#16251a",
               },
               fontFamily: {
                 "display": ["Work Sans"]
@@ -36,7 +37,8 @@
         body { font-family: 'Work Sans', sans-serif; }
         .glass-nav {
             backdrop-filter: blur(10px);
-            background-color: rgba(34, 16, 16, 0.95);
+            background-color: rgba(15, 26, 18, 0.95);
+
         }
         .text-shadow-lg {
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
@@ -55,10 +57,25 @@
 <nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-white/5 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         
-        <div class="flex items-center gap-2 flex-shrink-0">
-            <span class="text-primary text-2xl md:text-3xl font-bold tracking-tighter">Nonna Giustina</span>
-            <span class="text-accent-gold text-[10px] md:text-xs uppercase tracking-[0.3em] mt-1 font-medium whitespace-nowrap">1908</span>
-        </div>
+        <div class="flex items-center gap-3 flex-shrink-0">
+
+    <!-- Logo -->
+    <img src="/NonnaGiustina/imagenes/logo.png" 
+         alt="Nonna Giustina Logo"
+         class="h-14 md:h-14 w-auto object-contain">
+
+    <!-- Texto -->
+    <div class="flex items-baseline gap-2">
+        <span class="text-primary text-xl md:text-3xl font-bold tracking-tighter">
+            Nonna Giustina
+        </span>
+        <span class="text-accent-gold text-[10px] md:text-xs uppercase tracking-[0.3em] font-medium whitespace-nowrap">
+            1908
+        </span>
+    </div>
+
+</div>
+
 
         <div class="hidden md:flex items-center gap-8">
             <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="#specialties">Specialties</a>
@@ -68,7 +85,7 @@
         </div>
 
         <div class="hidden md:flex items-center gap-5">
-            <a href="https://youtube.com" class="bg-secondary hover:bg-red-700 text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 inline-block text-center whitespace-nowrap">
+            <a href="https://youtube.com" class="bg-secondary hover:bg-primary-dark text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 inline-block text-center whitespace-nowrap">
                 RESERVE A TABLE
             </a>
         </div>
@@ -112,7 +129,7 @@
         </p>
         
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
-            <button class="w-full sm:w-auto bg-secondary text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-red-700 transition-colors shadow-lg shadow-black/30">
+            <button class="w-full sm:w-auto bg-secondary text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-primary-dark transition-colors shadow-lg shadow-black/30">
                 Explore Menu
             </button>
             <a href="#specialties" class="w-full sm:w-auto bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-white/20 transition-colors text-center inline-block">
@@ -143,7 +160,7 @@
         
         <div class="grid md:grid-cols-2 gap-8">
             <div class="group relative overflow-hidden rounded-xl aspect-[4/5] shadow-2xl">
-                <img alt="La Pizza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Traditional Neapolitan pizza with leopard spotting on crust" src="imagenes/pizza-formaggi.png"/>
+                <img alt="La Pizza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Traditional Neapolitan pizza with leopard spotting on crust" src="../NonnaGiustina/imagenes/pizza formaggi.png"/>
                 <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90"></div>
                 <div class="absolute bottom-0 left-0 p-8 md:p-10">
                     <h4 class="text-white text-3xl font-bold mb-3">La Pizza</h4>
@@ -156,7 +173,7 @@
                 </div>
             </div>
             <div class="group relative overflow-hidden rounded-xl aspect-[4/5] shadow-2xl">
-                <img alt="La Pasta" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Plated artisan pasta with rich tomato sauce and herbs" src="imagenes/pasta.png"/>
+                <img alt="La Pasta" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Plated artisan pasta with rich tomato sauce and herbs" src="../NonnaGiustina/imagenes/pasta.png"/>
                 <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90"></div>
                 <div class="absolute bottom-0 left-0 p-8 md:p-10">
                     <h4 class="text-white text-3xl font-bold mb-3">Nuestros Platos</h4>
@@ -204,7 +221,13 @@
                     <div class="flex flex-col items-center">
                         <span class="text-xs uppercase tracking-tighter mb-2">Review us on</span>
                         <div class="h-8 w-24 bg-white/10 rounded-md flex items-center justify-center p-2">
-                            <span class="font-bold text-white text-xs">GOOGLE</span>
+                            <a href="https://reviewthis.biz/nonnagiustina" 
+   target="_blank"
+   rel="noopener noreferrer"
+   class="font-bold text-white text-xs hover:underline">
+   GOOGLE
+</a>
+
                         </div>
                     </div>
                     <div class="flex flex-col items-center">
@@ -322,7 +345,7 @@
             class="w-full bg-background-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold transition-all resize-none"></textarea>
     </div>
 
-    <button type="submit" class="w-full bg-secondary hover:bg-red-700 text-white font-bold py-4 rounded-xl transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg mt-2 uppercase tracking-widest text-sm">
+    <button type="submit" class="w-full bg-secondary hover:bg-primary-dark text-white font-bold py-4 rounded-xl transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg mt-2 uppercase tracking-widest text-sm">
         Send Message
     </button>
 </form>
