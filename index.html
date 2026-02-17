@@ -388,12 +388,14 @@
                     <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white hover:text-secondary" href="#">
                         <span class="material-symbols-outlined text-sm">public</span>
                     </a>
-                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white hover:text-secondary" href="#">
-                        <span class="material-symbols-outlined text-sm">share</span>
-                    </a>
-                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white hover:text-secondary" href="#">
-                        <span class="material-symbols-outlined text-sm">mail</span>
-                    </a>
+                    <a id="share-btn"
+   class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white hover:text-secondary cursor-pointer">
+    <span class="material-symbols-outlined text-sm">share</span>
+</a>
+                    <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white hover:text-secondary"
+   href="mailto:nonnagiustina1908@gmail.com">
+    <span class="material-symbols-outlined text-sm">mail</span>
+</a>
                 </div>
             </div>
             <div>
@@ -459,7 +461,6 @@
   btn.addEventListener('click', () => {
     menu.classList.toggle('hidden');
     
-    // Cambiar icono del menú si está abierto
     const icon = btn.querySelector('span');
     if(menu.classList.contains('hidden')) {
         icon.innerHTML = 'menu';
@@ -468,7 +469,6 @@
     }
   });
 
-  // Cerrar menú al hacer click en un enlace
   const mobileLinks = menu.querySelectorAll('a');
   mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
@@ -477,7 +477,27 @@
           icon.innerHTML = 'menu';
       });
   });
+
+  // 🔥 SHARE BUTTON
+  const shareBtn = document.getElementById('share-btn');
+
+  shareBtn.addEventListener('click', async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Nonna Giustina',
+          text: 'Authentic Italian cuisine in Palma de Mallorca 🍕🍝',
+          url: window.location.href
+        });
+      } catch (err) {
+        console.log('Error sharing:', err);
+      }
+    } else {
+      alert('Sharing not supported on this device');
+    }
+  });
 </script>
+
 
 </body>
 </html>
