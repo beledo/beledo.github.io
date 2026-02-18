@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "specialties": "Spezialitäten",
+    "menu": "Speisekarte",
+    "reviews": "Bewertungen",
+    "contact": "Kontakt",
+    "reserve": "TISCH RESERVIEREN",
+    "language": "Sprache"
+  },
+  "hero": {
+    "est": "Seit 2022 · Mallorca",
+    "title1": "Authentischer Ofen.",
+    "title2": "Moderne Eleganz.",
+    "subtitle": "Erleben Sie die Seele Italiens durch unsere handwerklichen Holzöfen und über Generationen weitergegebene Familienrezepte.",
+    "ctaMenu": "Speisekarte ansehen",
+    "ctaStory": "Unsere Geschichte"
+  },
+  "specialties": {
+    "label": "Unsere Spezialitäten",
+    "title": "Von Hand gefertigt, im Feuer perfektioniert",
+    "pizza": {
+      "title": "La Pizza",
+      "desc": "72 Stunden kalt fermentierter Teig, San-Marzano-Tomaten und handgezogener Mozzarella bei 450°C gebacken.",
+      "link": "PIZZA-MENÜ ANSEHEN"
+    },
+    "pasta": {
+      "title": "Unsere Gerichte",
+      "desc": "Hausgemachte Pasta mit langsam gekochten Saucen aus feinsten saisonalen Zutaten.",
+      "link": "MENÜ ANSEHEN"
+    }
+  },
+  "atmosphere": {
+    "title": "Das Ambiente"
+  },
+  "reviews": {
+    "label": "Bewertungen",
+    "title": "Was unsere Gäste sagen",
+    "subtitle": "Wir sind stolz darauf, ein unvergessliches kulinarisches Erlebnis zu bieten. Mit 4,9/5 Sternen bewertet.",
+    "reviewUs": "Bewerten Sie uns auf",
+    "review1": "„Ein sehr gemütlicher Ort mit wunderbaren Besitzern — man fühlt sich wie zu Hause.“",
+    "review2": "„Ausgezeichneter Service, sehr persönlich und von den Eigentümern selbst geführt.“"
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Haben Sie eine Frage oder Anfrage?",
+    "subtitle": "Ob Reservierung oder spezielle Anfrage – füllen Sie das Formular aus und wir melden uns schnellstmöglich.",
+    "phone": "Telefon",
+    "email": "E-Mail"
+  },
+  "form": {
+    "name": "Vorname",
+    "lastname": "Nachname",
+    "mail": "E-Mail",
+    "phone": "Telefon",
+    "message": "Nachricht",
+    "send": "NACHRICHT SENDEN"
+  },
+  "footer": {
+    "description": "Authentische italienische Küche im Herzen der Stadt.",
+    "hours": "Öffnungszeiten",
+    "links": "Schnellzugriff",
+    "location": "Standort",
+    "rights": "© 2026 Nonna Giustina. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen"
+  },
+  "whatsapp": {
+    "tooltip": "Chatten Sie mit uns auf WhatsApp"
+  }
+}
