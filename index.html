@@ -56,54 +56,44 @@
 
 <nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-white/5 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-    
-    <div class="flex items-center gap-3 flex-shrink-0">
-        <img src="imagenes/logo.png" alt="Nonna Giustina Logo" class="h-12 md:h-14 w-auto object-contain">
-        <div class="flex items-baseline gap-2">
-            <span class="text-primary text-xl md:text-3xl font-bold tracking-tighter">Nonna Giustina</span>
-            <span class="text-accent-gold text-[10px] md:text-xs uppercase tracking-[0.3em] font-medium">1908</span>
-        </div>
-    </div>
-
-    <div class="hidden md:flex items-center gap-8">
-        </div>
-
-    <div class="hidden md:flex items-center gap-4">
-        <a href="..." class="bg-secondary ...">RESERVE A TABLE</a>
-    </div>
-
-    <div class="md:hidden flex items-center">
-        <button id="mobile-menu-button" class="text-white p-2">
-            <span class="material-symbols-outlined text-3xl">menu</span>
-        </button>
-    </div>
-</div>
+        
+        <a href="/" class="flex items-center gap-3 flex-shrink-0 hover:opacity-80 transition-opacity">
+            <img src="imagenes/logo.png" 
+                 alt="Nonna Giustina Logo"
+                 class="h-12 md:h-14 w-auto object-contain">
+            <div class="flex items-baseline gap-2">
+                <span class="text-primary text-xl md:text-3xl font-bold tracking-tighter">
+                    Nonna Giustina
+                </span>
+                <span class="text-accent-gold text-[10px] md:text-xs uppercase tracking-[0.3em] font-medium whitespace-nowrap">
+                    1908
+                </span>
+            </div>
+        </a>
 
         <div class="hidden md:flex items-center gap-8">
-            <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="#specialties" data-i18n="nav.specialties">Specialties</a>
-            <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="https://www.tripadvisor.es/Restaurant_Review-g187463-d34200736-Reviews-Nonna_Giustina-Palma_de_Mallorca_Majorca_Balearic_Islands.html?m=69573" target="_blank" rel="noopener" data-i18n="nav.menu">Menu</a>
-            <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="#reviews" data-i18n="nav.reviews">Reviews</a>
-            <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="#contact" data-i18n="nav.contact">Contact</a>
-        </div>
+            <div class="flex items-center gap-8 mr-4">
+                <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="#specialties" data-i18n="nav.specialties">Specialties</a>
+                <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="https://www.tripadvisor.es/Restaurant_Review..." target="_blank" rel="noopener" data-i18n="nav.menu">Menu</a>
+                <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="#reviews" data-i18n="nav.reviews">Reviews</a>
+                <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="#contact" data-i18n="nav.contact">Contact</a>
+            </div>
 
-        <div class="hidden md:flex items-center space-x-1 bg-white/5 rounded-full px-3 py-1 border border-white/10">
-    <span class="material-symbols-outlined text-gray-400 text-[18px]">language</span>
-    <select id="language-switcher-desktop" 
-            class="bg-transparent border-none text-sm text-gray-300 focus:ring-0 cursor-pointer hover:text-white transition-colors py-0 pl-1 pr-8 appearance-none">
-        <option value="es" class="bg-zinc-900">ES</option>
-        <option value="en" class="bg-zinc-900">EN</option>
-        <option value="it" class="bg-zinc-900">IT</option>
-        <option value="de" class="bg-zinc-900">DE</option>
-    </select>
-</div>
+            <div class="flex items-center space-x-1 bg-white/5 rounded-full px-3 py-1 border border-white/10">
+                <span class="material-symbols-outlined text-gray-400 text-[18px]">language</span>
+                <select id="language-switcher-desktop" class="bg-transparent border-none text-sm text-gray-300 focus:ring-0 cursor-pointer py-0 pl-1 pr-8 appearance-none">
+                    <option value="es" class="bg-zinc-900">ES</option>
+                    <option value="en" class="bg-zinc-900">EN</option>
+                    <option value="it" class="bg-zinc-900">IT</option>
+                    <option value="de" class="bg-zinc-900">DE</option>
+                </select>
+            </div>
+
             <a href="https://wa.me/+34602428011?text=Hola%20quiero%20reservar%20una%20mesa"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="hidden md:inline-block bg-secondary hover:bg-primary-dark text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 whitespace-nowrap" 
-   data-i18n="nav.reserve">
-   RESERVE A TABLE
-</a>
-
+               target="_blank" rel="noopener noreferrer"
+               class="bg-secondary hover:bg-primary-dark text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 shadow-lg shadow-primary/20">
+                RESERVE A TABLE
+            </a>
         </div>
 
         <div class="md:hidden flex items-center">
@@ -113,31 +103,26 @@
         </div>
     </div>
 
-    <div id="mobile-menu" class="hidden md:hidden bg-surface-dark border-b border-white/10 shadow-2xl absolute w-full left-0 top-20 flex flex-col p-6 space-y-4 animate-fade-in-down">
+    <div id="mobile-menu" class="hidden bg-surface-dark border-b border-white/10 shadow-2xl absolute w-full left-0 top-20 flex flex-col p-6 space-y-4">
         <div class="mb-4">
-  <label class="text-xs uppercase tracking-widest text-slate-400 mb-2 block" data-i18n="nav.language">
-    Language
-  </label>
-
-  <select id="language-switcher-mobile"
-    class="w-full bg-background-dark text-white border border-white/20 rounded px-3 py-2 text-sm">
-    <option value="es">Español</option>
-    <option value="it">Italiano</option>
-    <option value="de">Deutsch</option>
-    <option value="en">English</option>
-  </select>
-</div>
-
+            <label class="text-xs uppercase tracking-widest text-slate-400 mb-2 block" data-i18n="nav.language">Language</label>
+            <select id="language-switcher-mobile" class="w-full bg-background-dark text-white border border-white/20 rounded px-3 py-2 text-sm">
+                <option value="es">Español</option>
+                <option value="it">Italiano</option>
+                <option value="de">Deutsch</option>
+                <option value="en">English</option>
+            </select>
+        </div>
         <a class="text-white text-lg font-medium py-2 border-b border-white/5" href="#specialties" data-i18n="nav.specialties">Specialties</a>
-        <a class="text-white text-lg font-medium py-2 border-b border-white/5" href="https://www.tripadvisor.es/Restaurant_Review-g187463-d34200736-Reviews-Nonna_Giustina-Palma_de_Mallorca_Majorca_Balearic_Islands.html?m=69573" target="_blank" rel="noopener" data-i18n="nav.menu">Menu</a>
+        <a class="text-white text-lg font-medium py-2 border-b border-white/5" href="https://www.tripadvisor.es/..." target="_blank" data-i18n="nav.menu">Menu</a>
         <a class="text-white text-lg font-medium py-2 border-b border-white/5" href="#reviews" data-i18n="nav.reviews">Reviews</a>
         <a class="text-white text-lg font-medium py-2 border-b border-white/5" href="#contact" data-i18n="nav.contact">Contact</a>
+        
         <a href="https://wa.me/+34602428011?text=Hola%20quiero%20reservar%20una%20mesa"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="bg-secondary hover:bg-primary-dark text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 inline-block text-center whitespace-nowrap" data-i18n="nav.reserve">
-   RESERVE A TABLE
-</a>
+           target="_blank" rel="noopener noreferrer"
+           class="bg-secondary text-white px-6 py-4 rounded-lg text-center font-bold shadow-lg">
+            RESERVE A TABLE
+        </a>
     </div>
 </nav>
 
