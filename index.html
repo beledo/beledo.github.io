@@ -56,26 +56,28 @@
 
 <nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-white/5 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        
-        <div class="flex items-center gap-3 flex-shrink-0">
-
-    <!-- Logo -->
-    <img src="imagenes/logo.png" 
-         alt="Nonna Giustina Logo"
-         class="h-14 md:h-14 w-auto object-contain">
-
-    <!-- Texto -->
-    <div class="flex items-baseline gap-2">
-        <span class="text-primary text-xl md:text-3xl font-bold tracking-tighter">
-            Nonna Giustina
-        </span>
-        <span class="text-accent-gold text-[10px] md:text-xs uppercase tracking-[0.3em] font-medium whitespace-nowrap">
-            1908
-        </span>
+    
+    <div class="flex items-center gap-3 flex-shrink-0">
+        <img src="imagenes/logo.png" alt="Nonna Giustina Logo" class="h-12 md:h-14 w-auto object-contain">
+        <div class="flex items-baseline gap-2">
+            <span class="text-primary text-xl md:text-3xl font-bold tracking-tighter">Nonna Giustina</span>
+            <span class="text-accent-gold text-[10px] md:text-xs uppercase tracking-[0.3em] font-medium">1908</span>
+        </div>
     </div>
 
-</div>
+    <div class="hidden md:flex items-center gap-8">
+        </div>
 
+    <div class="hidden md:flex items-center gap-4">
+        <a href="..." class="bg-secondary ...">RESERVE A TABLE</a>
+    </div>
+
+    <div class="md:hidden flex items-center">
+        <button id="mobile-menu-button" class="text-white p-2">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+    </div>
+</div>
 
         <div class="hidden md:flex items-center gap-8">
             <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="#specialties" data-i18n="nav.specialties">Specialties</a>
@@ -97,7 +99,8 @@
             <a href="https://wa.me/+34602428011?text=Hola%20quiero%20reservar%20una%20mesa"
    target="_blank"
    rel="noopener noreferrer"
-   class="bg-secondary hover:bg-primary-dark text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 inline-block text-center whitespace-nowrap" data-i18n="nav.reserve">
+   class="hidden md:inline-block bg-secondary hover:bg-primary-dark text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 whitespace-nowrap" 
+   data-i18n="nav.reserve">
    RESERVE A TABLE
 </a>
 
