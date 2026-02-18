@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="dark" lang="en">
+<html class="dark" lang="es">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -60,7 +60,7 @@
         <div class="flex items-center gap-3 flex-shrink-0">
 
     <!-- Logo -->
-    <img src="imagenes/logo.png" 
+    <img src="/NonnaGiustina/imagenes/logo.png" 
          alt="Nonna Giustina Logo"
          class="h-14 md:h-14 w-auto object-contain">
 
@@ -78,17 +78,25 @@
 
 
         <div class="hidden md:flex items-center gap-8">
-            <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="#specialties">Specialties</a>
-            <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="https://www.tripadvisor.es/Restaurant_Review-g187463-d34200736-Reviews-Nonna_Giustina-Palma_de_Mallorca_Majorca_Balearic_Islands.html?m=69573" target="_blank" rel="noopener">Menu</a>
-            <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="#reviews">Reviews</a>
-            <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="#contact">Contact</a>
+            <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="#specialties" data-i18n="nav.specialties">Specialties</a>
+            <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="https://www.tripadvisor.es/Restaurant_Review-g187463-d34200736-Reviews-Nonna_Giustina-Palma_de_Mallorca_Majorca_Balearic_Islands.html?m=69573" target="_blank" rel="noopener" data-i18n="nav.menu">Menu</a>
+            <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="#reviews" data-i18n="nav.reviews">Reviews</a>
+            <a class="text-sm uppercase tracking-widest hover:text-primary transition-colors text-slate-300" href="#contact" data-i18n="nav.contact">Contact</a>
         </div>
 
         <div class="hidden md:flex items-center gap-5">
-            <a href="https://wa.me/+34602428011?text=Hola%20me%20%gustaría%20reservar%20una%20mesa"
+            <select id="language-switcher-desktop"
+  class="bg-transparent text-white border border-white/20 rounded px-2 py-1 text-sm">
+  <option value="es">ES</option>
+  <option value="it">IT</option>
+  <option value="de">DE</option>
+  <option value="en">EN</option>
+</select>
+
+            <a href="https://wa.me/+34602428011?text=Hola%20quiero%20reservar%20una%20mesa"
    target="_blank"
    rel="noopener noreferrer"
-   class="bg-secondary hover:bg-primary-dark text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 inline-block text-center whitespace-nowrap">
+   class="bg-secondary hover:bg-primary-dark text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 inline-block text-center whitespace-nowrap" data-i18n="nav.reserve">
    RESERVE A TABLE
 </a>
 
@@ -102,14 +110,28 @@
     </div>
 
     <div id="mobile-menu" class="hidden md:hidden bg-surface-dark border-b border-white/10 shadow-2xl absolute w-full left-0 top-20 flex flex-col p-6 space-y-4 animate-fade-in-down">
-        <a class="text-white text-lg font-medium py-2 border-b border-white/5" href="#specialties">Specialties</a>
-        <a class="text-white text-lg font-medium py-2 border-b border-white/5" href="https://www.tripadvisor.es/Restaurant_Review-g187463-d34200736-Reviews-Nonna_Giustina-Palma_de_Mallorca_Majorca_Balearic_Islands.html?m=69573" target="_blank" rel="noopener">Menu</a>
-        <a class="text-white text-lg font-medium py-2 border-b border-white/5" href="#reviews">Reviews</a>
-        <a class="text-white text-lg font-medium py-2 border-b border-white/5" href="#contact">Contact</a>
+        <div class="mb-4">
+  <label class="text-xs uppercase tracking-widest text-slate-400 mb-2 block" data-i18n="nav.language">
+    Language
+  </label>
+
+  <select id="language-switcher-mobile"
+    class="w-full bg-background-dark text-white border border-white/20 rounded px-3 py-2 text-sm">
+    <option value="es">Español</option>
+    <option value="it">Italiano</option>
+    <option value="de">Deutsch</option>
+    <option value="en">English</option>
+  </select>
+</div>
+
+        <a class="text-white text-lg font-medium py-2 border-b border-white/5" href="#specialties" data-i18n="nav.specialties">Specialties</a>
+        <a class="text-white text-lg font-medium py-2 border-b border-white/5" href="https://www.tripadvisor.es/Restaurant_Review-g187463-d34200736-Reviews-Nonna_Giustina-Palma_de_Mallorca_Majorca_Balearic_Islands.html?m=69573" target="_blank" rel="noopener" data-i18n="nav.menu">Menu</a>
+        <a class="text-white text-lg font-medium py-2 border-b border-white/5" href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a class="text-white text-lg font-medium py-2 border-b border-white/5" href="#contact" data-i18n="nav.contact">Contact</a>
         <a href="https://wa.me/+34602428011?text=Hola%20quiero%20reservar%20una%20mesa"
    target="_blank"
    rel="noopener noreferrer"
-   class="bg-secondary hover:bg-primary-dark text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 inline-block text-center whitespace-nowrap">
+   class="bg-secondary hover:bg-primary-dark text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 inline-block text-center whitespace-nowrap" data-i18n="nav.reserve">
    RESERVE A TABLE
 </a>
     </div>
@@ -122,24 +144,24 @@
     </div>
     
     <div class="relative z-10 text-center px-4 max-w-4xl w-full flex flex-col items-center justify-center h-full">
-        <span class="inline-block px-4 py-1 border border-accent-gold text-accent-gold text-xs tracking-[0.5em] uppercase mb-4 mt-10 md:mt-0 rounded-full bg-accent-gold/5 backdrop-blur-sm">
+        <span class="inline-block px-4 py-1 border border-accent-gold text-accent-gold text-xs tracking-[0.5em] uppercase mb-4 mt-10 md:mt-0 rounded-full bg-accent-gold/5 backdrop-blur-sm" data-i18n="hero.est">
           Est. 2022 Mallorca
         </span>
 
-        <h1 class="text-5xl sm:text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight text-shadow-lg leading-none">
+        <h1 class="text-5xl sm:text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight text-shadow-lg leading-none" data-i18n="hero.title1">
             Authentic Hearth.<br/>
-            <span class="text-primary">Modern Elegance.</span>
+            <span class="text-primary" data-i18n="hero.title2">Modern Elegance.</span>
         </h1>
         
-        <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto font-light leading-relaxed px-2">
+        <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto font-light leading-relaxed px-2" data-i18n="hero.subtitle">
             Experience the soul of Italy through our artisanal wood-fired ovens and generations of secret family recipes.
         </p>
         
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
-            <button class="w-full sm:w-auto bg-secondary text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-primary-dark transition-colors shadow-lg shadow-black/30">
+            <button class="w-full sm:w-auto bg-secondary text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-primary-dark transition-colors shadow-lg shadow-black/30" data-i18n="hero.ctaMenu">
                 Explore Menu
             </button>
-            <a href="#specialties" class="w-full sm:w-auto bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-white/20 transition-colors text-center inline-block">
+            <a href="#specialties" class="w-full sm:w-auto bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-4 rounded-xl text-lg font-bold hover:bg-white/20 transition-colors text-center inline-block" data-i18n="hero.ctaStory">
                 The Story
             </a>
         </div>
@@ -159,22 +181,22 @@
     <div class="max-w-7xl mx-auto px-6">
         <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-4">
             <div class="max-w-xl">
-                <h2 class="text-accent-gold text-sm tracking-[0.3em] uppercase mb-2 font-semibold">Our Signatures</h2>
-                <h3 class="text-4xl md:text-5xl font-bold dark:text-white">Crafted by Hand, <br/> Perfected by Fire</h3>
+                <h2 class="text-accent-gold text-sm tracking-[0.3em] uppercase mb-2 font-semibold" data-i18n="specialties.label">Our Signatures</h2>
+                <h3 class="text-4xl md:text-5xl font-bold dark:text-white" data-i18n="specialties.title">Crafted by Hand, <br/> Perfected by Fire</h3>
             </div>
             <div class="h-1 bg-primary w-24 mb-4 hidden md:block"></div>
         </div>
         
         <div class="grid md:grid-cols-2 gap-8">
             <div class="group relative overflow-hidden rounded-xl aspect-[4/5] shadow-2xl">
-                <img alt="La Pizza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Traditional Neapolitan pizza with leopard spotting on crust" src="imagenes/pizza-formaggi.png"/>
+                <img alt="La Pizza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Traditional Neapolitan pizza with leopard spotting on crust" src="imagenes/pizza formaggi.png"/>
                 <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90"></div>
                 <div class="absolute bottom-0 left-0 p-8 md:p-10">
-                    <h4 class="text-white text-3xl font-bold mb-3">La Pizza</h4>
-                    <p class="text-slate-300 mb-6 max-w-sm font-light">
+                    <h4 class="text-white text-3xl font-bold mb-3" data-i18n="specialties.pizza.title">La Pizza</h4>
+                    <p class="text-slate-300 mb-6 max-w-sm font-light" data-i18n="specialties.pizza.desc">
                         72-hour cold fermented dough, San Marzano tomatoes, and hand-stretched mozzarella baked at 450°C.
                     </p>
-                    <a class="inline-flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform" href="#">
+                    <a class="inline-flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform" href="https://www.tripadvisor.es/Restaurant_Review-g187463-d34200736-Reviews-Nonna_Giustina-Palma_de_Mallorca_Majorca_Balearic_Islands.html?m=69573" data-i18n="specialties.pizza.link">
                         VIEW PIZZA MENU <span class="material-symbols-outlined ml-2">arrow_forward</span>
                     </a>
                 </div>
@@ -183,11 +205,11 @@
                 <img alt="La Pasta" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Plated artisan pasta with rich tomato sauce and herbs" src="imagenes/pasta.png"/>
                 <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90"></div>
                 <div class="absolute bottom-0 left-0 p-8 md:p-10">
-                    <h4 class="text-white text-3xl font-bold mb-3">Nuestros Platos</h4>
-                    <p class="text-slate-300 mb-6 max-w-sm font-light">
+                    <h4 class="text-white text-3xl font-bold mb-3" data-i18n="specialties.pasta.title">Nuestros Platos</h4>
+                    <p class="text-slate-300 mb-6 max-w-sm font-light" data-i18n="specialties.pasta.desc">
                         House-made bronze-cut pasta tossed in sauces slow-cooked for hours using the season's finest imports.
                     </p>
-                    <a class="inline-flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform" href="#">
+                    <a class="inline-flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform" href="https://www.tripadvisor.es/Restaurant_Review-g187463-d34200736-Reviews-Nonna_Giustina-Palma_de_Mallorca_Majorca_Balearic_Islands.html?m=69573" data-i18n="specialties.pasta.link">
                         VIEW MENU <span class="material-symbols-outlined ml-2">arrow_forward</span>
                     </a>
                 </div>
@@ -198,7 +220,7 @@
 
 <section class="bg-surface-dark py-24 overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 mb-12">
-        <h2 class="text-center text-3xl font-bold dark:text-white uppercase tracking-widest">The Atmosphere</h2>
+        <h2 class="text-center text-3xl font-bold dark:text-white uppercase tracking-widest" data-i18n="atmosphere.title">The Atmosphere</h2>
         <div class="w-20 h-1 bg-primary mx-auto mt-4"></div>
     </div>
     <div class="flex gap-4 px-6 overflow-x-auto pb-8 scrollbar-hide no-scrollbar">
@@ -221,12 +243,12 @@
     <div class="max-w-7xl mx-auto px-6">
         <div class="grid lg:grid-cols-3 gap-12 items-center">
             <div class="lg:col-span-1">
-                <h2 class="text-accent-gold text-sm tracking-[0.3em] uppercase mb-2 font-semibold">Testimonials</h2>
-                <h3 class="text-4xl font-bold dark:text-white mb-6">What our guests are saying</h3>
-                <p class="text-slate-400 mb-8 font-light">We pride ourselves on providing an unforgettable culinary experience. Rated 4.9/5 stars across all major platforms.</p>
+                <h2 class="text-accent-gold text-sm tracking-[0.3em] uppercase mb-2 font-semibold" data-i18n="reviews.label">Testimonials</h2>
+                <h3 class="text-4xl font-bold dark:text-white mb-6" data-i18n="reviews.title">What our guests are saying</h3>
+                <p class="text-slate-400 mb-8 font-light" data-i18n="reviews.subtitle">We pride ourselves on providing an unforgettable culinary experience. Rated 4.9/5 stars across all major platforms.</p>
                 <div class="flex gap-6 grayscale opacity-60">
                     <div class="flex flex-col items-center">
-                        <span class="text-xs uppercase tracking-tighter mb-2">Review us on</span>
+                        <span class="text-xs uppercase tracking-tighter mb-2" data-i18n="reviews.reviewsUs">Review us on</span>
                         <div class="h-8 w-24 bg-white/10 rounded-md flex items-center justify-center p-2">
                             <a href="https://reviewthis.biz/nonnagiustina" 
    target="_blank"
@@ -238,7 +260,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col items-center">
-                        <span class="text-xs uppercase tracking-tighter mb-2">Review us on</span>
+                        <span class="text-xs uppercase tracking-tighter mb-2" data-i18n="reviews.reviewsUs">Review us on</span>
                         <div class="h-8 w-24 bg-white/10 rounded-md flex items-center justify-center p-2">
                             <a href="https://www.tripadvisor.es/UserReviewEdit-g187463-d34200736-Nonna_Giustina-Palma_de_Mallorca_Majorca_Balearic_Islands.html" 
    target="_blank"
@@ -262,9 +284,10 @@
                     <a href="https://maps.app.goo.gl/cENYJdi8NhtUUMGs6" 
    target="_blank" 
    rel="noopener noreferrer"
-   class="block text-slate-300 italic mb-6">
+   class="block text-slate-300 italic mb-6" data-i18n="reviews.reviews1">
    "A very cozy place with amazing owners — you feel right at home while enjoying their wonderful food."
 </a>
+
 
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">JD</div>
@@ -282,7 +305,7 @@
                         <span class="material-symbols-outlined fill-1">star</span>
                         <span class="material-symbols-outlined fill-1">star</span>
                     </div>
-                    <p class="text-slate-300 italic mb-6">"Excellent service, very personalized, and attended by the owners themselves. The dishes are well-portioned and everything is very delicious. I really liked that it’s a very calm and family-friendly place."</p>
+                    <p class="text-slate-300 italic mb-6" data-i18n="reviews.reviews2">"Excellent service, very personalized, and attended by the owners themselves. The dishes are well-portioned and everything is very delicious. I really liked that it’s a very calm and family-friendly place."</p>
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">SR</div>
                         <div>
@@ -301,9 +324,9 @@
         <div class="grid lg:grid-cols-2 gap-16 items-start">
             
             <div>
-                <h2 class="text-accent-gold text-sm tracking-[0.3em] uppercase mb-2 font-semibold">Get in Touch</h2>
-                <h3 class="text-4xl font-bold dark:text-white mb-6">Have a question or request?</h3>
-                <p class="text-slate-400 mb-10 font-light leading-relaxed">
+                <h2 class="text-accent-gold text-sm tracking-[0.3em] uppercase mb-2 font-semibold" data-i18n="contact.label">Get in Touch</h2>
+                <h3 class="text-4xl font-bold dark:text-white mb-6" data-i18n="contact.title">Have a question or request?</h3>
+                <p class="text-slate-400 mb-10 font-light leading-relaxed" data-i18n="contact.subtitle">
                     Whether you want to contact us have dietary concerns, or simply want to say hello, fill out the form and our team will reach out shortly.
                 </p>
                 
@@ -313,7 +336,7 @@
                             <span class="material-symbols-outlined">phone</span>
                         </div>
                         <div>
-                            <h5 class="text-white font-bold uppercase text-sm tracking-widest mb-1">Phone</h5>
+                            <h5 class="text-white font-bold uppercase text-sm tracking-widest mb-1" data-i18n="contact.phone">Phone</h5>
                             <p class="text-slate-400 font-light">+34 602 42 80 11</p>
                         </div>
                     </div>
@@ -322,7 +345,7 @@
                             <span class="material-symbols-outlined">mail</span>
                         </div>
                         <div>
-                            <h5 class="text-white font-bold uppercase text-sm tracking-widest mb-1">Email</h5>
+                            <h5 class="text-white font-bold uppercase text-sm tracking-widest mb-1" data-i18n="contact.email">Email</h5>
                             <p class="text-slate-400 font-light">info@nonnagiustina.com</p>
                         </div>
                     </div>
@@ -333,12 +356,12 @@
                 <form action="https://formspree.io/f/TU_CODIGO_AQUI" method="POST" class="space-y-6">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="space-y-2">
-            <label for="nombre" class="text-xs uppercase tracking-widest text-slate-400 font-semibold ml-1">Nombre</label>
+            <label for="nombre" class="text-xs uppercase tracking-widest text-slate-400 font-semibold ml-1" data-i18n="form.name">Nombre</label>
             <input type="text" name="nombre" id="nombre" placeholder="John" required
                 class="w-full bg-background-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold transition-all">
         </div>
         <div class="space-y-2">
-            <label for="apellido" class="text-xs uppercase tracking-widest text-slate-400 font-semibold ml-1">Apellido</label>
+            <label for="apellido" class="text-xs uppercase tracking-widest text-slate-400 font-semibold ml-1" data-i18n="form.lastname">Apellido</label>
             <input type="text" name="apellido" id="apellido" placeholder="Doe" required
                 class="w-full bg-background-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold transition-all">
         </div>
@@ -346,24 +369,24 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="space-y-2">
-            <label for="email" class="text-xs uppercase tracking-widest text-slate-400 font-semibold ml-1">Mail</label>
+            <label for="email" class="text-xs uppercase tracking-widest text-slate-400 font-semibold ml-1" data-i18n="form.mail">Mail</label>
             <input type="email" name="email" id="email" placeholder="john@example.com" required
                 class="w-full bg-background-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold transition-all">
         </div>
         <div class="space-y-2">
-            <label for="telefono" class="text-xs uppercase tracking-widest text-slate-400 font-semibold ml-1">Teléfono</label>
+            <label for="telefono" class="text-xs uppercase tracking-widest text-slate-400 font-semibold ml-1" data-i18n="form.phone">Teléfono</label>
             <input type="tel" name="telefono" id="telefono" placeholder="+34 000 000 000" 
                 class="w-full bg-background-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold transition-all">
         </div>
     </div>
 
     <div class="space-y-2">
-        <label for="consulta" class="text-xs uppercase tracking-widest text-slate-400 font-semibold ml-1">Consulta</label>
+        <label for="consulta" class="text-xs uppercase tracking-widest text-slate-400 font-semibold ml-1" data-i18n="form.message">Consulta</label>
         <textarea name="mensaje" id="consulta" rows="4" placeholder="How can we help you?" required
             class="w-full bg-background-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold transition-all resize-none"></textarea>
     </div>
 
-    <button type="submit" class="w-full bg-secondary hover:bg-primary-dark text-white font-bold py-4 rounded-xl transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg mt-2 uppercase tracking-widest text-sm">
+    <button type="submit" class="w-full bg-secondary hover:bg-primary-dark text-white font-bold py-4 rounded-xl transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg mt-2 uppercase tracking-widest text-sm" data-i18n="form.send">
         Send Message
     </button>
 </form>
@@ -381,7 +404,7 @@
                     <span class="text-primary text-2xl font-bold tracking-tighter">Nonna Giustina</span>
                     <span class="text-accent-gold text-[10px] uppercase tracking-[0.3em] font-medium">1908</span>
                 </div>
-                <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                <p class="text-slate-500 text-sm leading-relaxed mb-6" data-i18n="footer.description">
                     Bringing the authentic flavors of Milan to your table since 1994. Experience fine Italian dining in the heart of the city.
                 </p>
                 <div class="flex gap-4">
@@ -392,14 +415,17 @@
    class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white hover:text-secondary cursor-pointer">
     <span class="material-symbols-outlined text-sm">share</span>
 </a>
+
+
                     <a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white hover:text-secondary"
    href="mailto:nonnagiustina1908@gmail.com">
     <span class="material-symbols-outlined text-sm">mail</span>
 </a>
+
                 </div>
             </div>
             <div>
-                <h6 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Opening Hours</h6>
+                <h6 class="text-white font-bold mb-6 uppercase tracking-widest text-xs" data-i18n="footer.hours">Opening Hours</h6>
                 <ul class="text-slate-400 text-sm space-y-3">
                     <li class="flex justify-between"><span>Thu - Sat</span> <span>19:00 - 23:00</span></li>
                     <li class="flex justify-between"><span>Sunday</span> <span>14:00 - 17:00</span></li>
@@ -407,16 +433,16 @@
                 </ul>
             </div>
             <div>
-                <h6 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Quick Links</h6>
+                <h6 class="text-white font-bold mb-6 uppercase tracking-widest text-xs" data-i18n="footer.links">Quick Links</h6>
                 <ul class="text-slate-400 text-sm space-y-3">
-                        <li><a class="hover:text-primary transition-colors" href="#">Digital Menu</a></li>
-                        <li><a class="hover:text-primary transition-colors" href="https://wa.me/+34602428011?text=Hola%20me%20%gustaría%20reservar%20una%20mesa" target="_blank"
+                        <li><a class="hover:text-primary transition-colors" href="https://www.tripadvisor.es/Restaurant_Review-g187463-d34200736-Reviews-Nonna_Giustina-Palma_de_Mallorca_Majorca_Balearic_Islands.html?m=69573">Digital Menu</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="https://wa.me/+34602428011?text=Hola%20quiero%20reservar%20una%20mesa" target="_blank"
    rel="noopener noreferrer">Reservations</a></li>
                         <li><a class="hover:text-primary transition-colors" href="#contact">Contact us</a></li>
                 </ul>
             </div>
             <div>
-    <h6 class="text-white font-bold mb-6 uppercase tracking-widest text-xs">Location</h6>
+    <h6 class="text-white font-bold mb-6 uppercase tracking-widest text-xs" data-i18n="footer.location">Location</h6>
         
     
     <div class="rounded-lg overflow-hidden h-32 mb-4 bg-white/5 border border-white/10 transition-transform duration-500 hover:scale-105 shadow-lg">
@@ -427,33 +453,77 @@
               style="border:0;">
             </iframe>
         </div>
-    </div>
+
                 <p class="text-slate-400 text-xs">
                     Av. Joan Mirò 98,<br/>
                     07015 Palma de Mallorca, Spain
                 </p>
             </div>
         </div>
-        <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-600 text-[10px] uppercase tracking-widest">
+        <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-600 text-[10px] uppercase tracking-widest" data-i18n="footer.rights">
             <p>© 2026 Nonna Giustina. All Rights Reserved.</p>
             <div class="flex gap-6">
-                <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
-                <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+                <a class="hover:text-white transition-colors" href="#" data-i18n="footer.privacy">Privacy Policy</a>
+                <a class="hover:text-white transition-colors" href="#" data-i18n="footer.terms">Terms of Service</a>
             </div>
         </div>
     </div>
 </footer>
 
-<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform active:scale-90 group" href="https://wa.me/+34602428011?text=Hola%20me%20%gustaría%20reservar%20una%20mesa"> 
+<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform active:scale-90 group" href="https://wa.me/+34602428011?text=Hola%20quiero%20reservar%20una%20mesa"> 
     <svg fill="currentColor" height="32" viewbox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.319 1.592 5.548 0 10.058-4.51 10.06-10.059.002-2.696-1.047-5.23-2.956-7.139-1.909-1.909-4.442-2.959-7.138-2.96-5.551 0-10.062 4.511-10.065 10.061-.001 2.105.56 4.14 1.621 5.924l-.991 3.619 3.75-.983l-.001-.001zm10.115-6.733c-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.668.149-.198.297-.767.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"></path>
     </svg>
-    <span class="absolute right-20 bg-white text-background-dark py-2 px-4 rounded-lg text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-xl border border-background-dark/10 pointer-events-none">
+    <span class="absolute right-20 bg-white text-background-dark py-2 px-4 rounded-lg text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-xl border border-background-dark/10 pointer-events-none" data-i18n="whatsapp.tooltip">
         Chat with us on WhatsApp
     </span>
 </a>
 
 <script>
+
+const desktopSwitcher = document.getElementById('language-switcher-desktop');
+const mobileSwitcher = document.getElementById('language-switcher-mobile');
+
+async function loadLanguage(lang) {
+  const response = await fetch(`${lang}.json`);
+  const translations = await response.json();
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const keys = el.getAttribute('data-i18n').split('.');
+    let text = translations;
+
+    keys.forEach(key => {
+      text = text[key];
+    });
+
+    if (text) el.innerHTML = text;
+  });
+
+  document.documentElement.lang = lang;
+  localStorage.setItem('language', lang);
+
+  // sincronizar selects
+  if (desktopSwitcher) desktopSwitcher.value = lang;
+  if (mobileSwitcher) mobileSwitcher.value = lang;
+}
+
+// eventos
+if (desktopSwitcher) {
+  desktopSwitcher.addEventListener('change', (e) => {
+    loadLanguage(e.target.value);
+  });
+}
+
+if (mobileSwitcher) {
+  mobileSwitcher.addEventListener('change', (e) => {
+    loadLanguage(e.target.value);
+  });
+}
+
+// cargar idioma guardado
+const savedLang = localStorage.getItem('language') || 'es';
+loadLanguage(savedLang);
+
   // Mobile menu toggle script
   const btn = document.getElementById('mobile-menu-button');
   const menu = document.getElementById('mobile-menu');
