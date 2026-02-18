@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "specialties": "Specialità",
+    "menu": "Menù",
+    "reviews": "Recensioni",
+    "contact": "Contatto",
+    "reserve": "PRENOTA UN TAVOLO",
+    "language": "Lingua"
+  },
+  "hero": {
+    "est": "Dal 2022 · Mallorca",
+    "title1": "Forno Autentico.",
+    "title2": "Eleganza Moderna.",
+    "subtitle": "Scopri l'anima dell'Italia attraverso i nostri forni a legna artigianali e ricette tramandate da generazioni.",
+    "ctaMenu": "Scopri il Menù",
+    "ctaStory": "La Nostra Storia"
+  },
+  "specialties": {
+    "label": "Le Nostre Specialità",
+    "title": "Fatto a Mano, Perfezionato dal Fuoco",
+    "pizza": {
+      "title": "La Pizza",
+      "desc": "Impasto fermentato 72 ore, pomodori San Marzano e mozzarella fresca cotta a 450°C.",
+      "link": "VEDI MENÙ PIZZA"
+    },
+    "pasta": {
+      "title": "I Nostri Piatti",
+      "desc": "Pasta fatta in casa con sughi preparati lentamente con ingredienti stagionali selezionati.",
+      "link": "VEDI MENÙ"
+    }
+  },
+  "atmosphere": {
+    "title": "L'Atmosfera"
+  },
+  "reviews": {
+    "label": "Testimonianze",
+    "title": "Cosa dicono i nostri ospiti",
+    "subtitle": "Offriamo un'esperienza culinaria indimenticabile. Valutato 4.9/5 stelle.",
+    "reviewUs": "Lascia una recensione su",
+    "review1": "“Un posto accogliente con proprietari fantastici — ti senti come a casa.”",
+    "review2": "“Servizio eccellente e molto personalizzato, piatti abbondanti e deliziosi.”"
+  },
+  "contact": {
+    "label": "Contatto",
+    "title": "Hai una domanda o richiesta?",
+    "subtitle": "Per prenotazioni o richieste particolari, compila il modulo e ti risponderemo al più presto.",
+    "phone": "Telefono",
+    "email": "Email"
+  },
+  "form": {
+    "name": "Nome",
+    "lastname": "Cognome",
+    "mail": "Email",
+    "phone": "Telefono",
+    "message": "Messaggio",
+    "send": "INVIA MESSAGGIO"
+  },
+  "footer": {
+    "description": "Portiamo i veri sapori italiani sulla tua tavola.",
+    "hours": "Orari di Apertura",
+    "links": "Link Rapidi",
+    "location": "Posizione",
+    "rights": "© 2026 Nonna Giustina. Tutti i diritti riservati.",
+    "privacy": "Privacy Policy",
+    "terms": "Termini di Servizio"
+  },
+  "whatsapp": {
+    "tooltip": "Chatta con noi su WhatsApp"
+  }
+}
