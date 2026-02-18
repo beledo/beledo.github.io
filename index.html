@@ -189,7 +189,7 @@
         
         <div class="grid md:grid-cols-2 gap-8">
             <div class="group relative overflow-hidden rounded-xl aspect-[4/5] shadow-2xl">
-                <img alt="La Pizza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Traditional Neapolitan pizza with leopard spotting on crust" src="imagenes/pizza formaggi.png"/>
+                <img alt="La Pizza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Traditional Neapolitan pizza with leopard spotting on crust" src="imagenes/pizza-formaggi.png"/>
                 <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90"></div>
                 <div class="absolute bottom-0 left-0 p-8 md:p-10">
                     <h4 class="text-white text-3xl font-bold mb-3" data-i18n="specialties.pizza.title">La Pizza</h4>
@@ -480,69 +480,80 @@
 </a>
 
 <script>
-const desktopSwitcher = document.getElementById('language-switcher-desktop');
-const mobileSwitcher = document.getElementById('language-switcher-mobile');
+    // --- LÓGICA DEL MENÚ MÓVIL ---
+    const menuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-async function loadLanguage(lang) {
-  try {
-    // Usamos ./ para indicar que busque en la misma carpeta donde está el index.html
-    const path = `./i18n/${lang}.json`;
-    console.log(`Intentando cargar idioma desde: ${path}`);
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
 
-    const response = await fetch(path);
-    
-    if (!response.ok) {
-        throw new Error(`No se pudo cargar ${path} (Status: ${response.status})`);
+        // Opcional: Cerrar el menú al hacer clic en un enlace
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
     }
-    
-    const translations = await response.json();
-    
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const keys = el.getAttribute('data-i18n').split('.');
-      let text = translations;
-      
-      // Navegar por el objeto JSON
-      keys.forEach(key => { 
-          if (text) text = text[key]; 
-      });
 
-      // Aplicar traducción solo si se encontró el texto
-      if (text && typeof text === 'string') {
-          // Si es un input o textarea, usamos placeholder, si no, innerHTML
-          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-              el.placeholder = text;
-          } else {
-              el.innerHTML = text;
-          }
-      }
+    // --- LÓGICA DE TRADUCCIÓN ---
+    const desktopSwitcher = document.getElementById('language-switcher-desktop');
+    const mobileSwitcher = document.getElementById('language-switcher-mobile');
+
+    async function loadLanguage(lang) {
+        try {
+            // Usamos una ruta relativa sin el punto inicial para evitar conflictos en GitHub
+            const path = `i18n/${lang}.json`;
+            console.log("Intentando cargar:", path);
+
+            const response = await fetch(path);
+            
+            if (!response.ok) {
+                throw new Error(`Error ${response.status}: No se encontró el archivo ${path}`);
+            }
+
+            const translations = await response.json();
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const keyPath = el.getAttribute('data-i18n');
+                const keys = keyPath.split('.');
+                let text = translations;
+
+                // Navegamos por el objeto JSON (ej: nav -> specialties)
+                keys.forEach(key => {
+                    if (text) text = text[key];
+                });
+
+                if (text) {
+                    // Si es un botón o link con texto simple, o un párrafo
+                    el.innerHTML = text;
+                }
+            });
+
+            // Guardar preferencia y actualizar selectores
+            document.documentElement.lang = lang;
+            localStorage.setItem('language', lang);
+            if (desktopSwitcher) desktopSwitcher.value = lang;
+            if (mobileSwitcher) mobileSwitcher.value = lang;
+
+            console.log("Idioma actualizado a:", lang);
+
+        } catch (err) {
+            console.error("Fallo en la traducción:", err);
+        }
+    }
+
+    // Eventos de cambio
+    [desktopSwitcher, mobileSwitcher].forEach(switcher => {
+        if (switcher) {
+            switcher.addEventListener('change', (e) => loadLanguage(e.target.value));
+        }
     });
 
-    document.documentElement.lang = lang;
-    localStorage.setItem('language', lang);
-
-    if (desktopSwitcher) desktopSwitcher.value = lang;
-    if (mobileSwitcher) mobileSwitcher.value = lang;
-
-    console.log(`Idioma cargado correctamente: ${lang}`);
-
-  } catch (err) {
-    console.error('Error cargando idioma:', err);
-    // Opcional: Mostrar alerta si falla
-    // alert("Error loading language file. Check console (F12) for details.");
-  }
-}
-
-// Eventos para cambiar idioma
-if (desktopSwitcher) {
-  desktopSwitcher.addEventListener('change', e => loadLanguage(e.target.value));
-}
-if (mobileSwitcher) {
-  mobileSwitcher.addEventListener('change', e => loadLanguage(e.target.value));
-}
-
-// Cargar idioma guardado o por defecto
-const savedLang = localStorage.getItem('language') || 'es';
-loadLanguage(savedLang);
+    // Cargar idioma inicial
+    const savedLang = localStorage.getItem('language') || 'es';
+    loadLanguage(savedLang);
 </script>
 
 </body>
