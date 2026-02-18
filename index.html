@@ -483,23 +483,38 @@
 const desktopSwitcher = document.getElementById('language-switcher-desktop');
 const mobileSwitcher = document.getElementById('language-switcher-mobile');
 
-// Ajusta esto según tu repo:
-// Si tu repo es beledo.github.io -> déjalo como ''
-// Si tu repo es beledo.github.io/restaurant -> cambia a '/restaurant'
-const repoBasePath = ''; 
-
 async function loadLanguage(lang) {
   try {
-    const response = await fetch(`${repoBasePath}/i18n/${lang}.json`);
-    if (!response.ok) throw new Error(`Archivo ${lang}.json no encontrado en ${repoBasePath}/i18n/`);
+    // Usamos ./ para indicar que busque en la misma carpeta donde está el index.html
+    const path = `./i18n/${lang}.json`;
+    console.log(`Intentando cargar idioma desde: ${path}`);
+
+    const response = await fetch(path);
+    
+    if (!response.ok) {
+        throw new Error(`No se pudo cargar ${path} (Status: ${response.status})`);
+    }
     
     const translations = await response.json();
     
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const keys = el.getAttribute('data-i18n').split('.');
       let text = translations;
-      keys.forEach(key => { if (text) text = text[key]; });
-      if (text) el.innerHTML = text;
+      
+      // Navegar por el objeto JSON
+      keys.forEach(key => { 
+          if (text) text = text[key]; 
+      });
+
+      // Aplicar traducción solo si se encontró el texto
+      if (text && typeof text === 'string') {
+          // Si es un input o textarea, usamos placeholder, si no, innerHTML
+          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+              el.placeholder = text;
+          } else {
+              el.innerHTML = text;
+          }
+      }
     });
 
     document.documentElement.lang = lang;
@@ -508,9 +523,12 @@ async function loadLanguage(lang) {
     if (desktopSwitcher) desktopSwitcher.value = lang;
     if (mobileSwitcher) mobileSwitcher.value = lang;
 
-    console.log(`Idioma cargado: ${lang}`);
+    console.log(`Idioma cargado correctamente: ${lang}`);
+
   } catch (err) {
     console.error('Error cargando idioma:', err);
+    // Opcional: Mostrar alerta si falla
+    // alert("Error loading language file. Check console (F12) for details.");
   }
 }
 
@@ -526,7 +544,6 @@ if (mobileSwitcher) {
 const savedLang = localStorage.getItem('language') || 'es';
 loadLanguage(savedLang);
 </script>
-
 
 </body>
 </html>
