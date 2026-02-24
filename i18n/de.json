@@ -66,5 +66,25 @@
   },
   "whatsapp": {
     "tooltip": "Chatten Sie mit uns auf WhatsApp"
+  },
+  "faq": {
+  "label": "Nützliche Informationen",
+  "title": "Häufig gestellte Fragen",
+  "payments": {
+    "title": "Kartenzahlung",
+    "desc": "Wir akzeptieren Kredit- oder EC-Kartenzahlungen für Beträge ab 30€."
+  },
+  "access": {
+    "title": "Barrierefreiheit",
+    "desc": "Aufgrund der Architektur unseres Gebäudes verfügen wir leider nicht über einen rollstuhlgerechten Zugang."
+  },
+  "pets": {
+    "title": "Haustiere",
+    "desc": "Um den Komfort aller unserer Gäste während des Service zu gewährleisten, sind Haustiere nicht gestattet."
+  },
+  "smoking": {
+    "title": "Rauchfreie Zone",
+    "desc": "Wir sind eine 100% rauchfreie Einrichtung. Das Rauchen ist in keinem unserer Räumlichkeiten gestattet."
   }
+}
 }
