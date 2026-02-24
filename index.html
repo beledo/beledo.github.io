@@ -177,69 +177,49 @@
 
 <section class="py-24 bg-background-light dark:bg-background-dark" id="specialties">
   <div class="max-w-7xl mx-auto px-6">
-
-```
-<div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-4">
-  <div class="max-w-xl">
-    <h2 class="text-accent-gold text-sm tracking-[0.3em] uppercase mb-2 font-semibold" data-i18n="specialties.label">
-      Our Signatures
-    </h2>
-    <h3 class="text-4xl md:text-5xl font-bold dark:text-white" data-i18n="specialties.title">
-      Crafted by Hand, <br /> Perfected by Fire
-    </h3>
-  </div>
-  <div class="h-1 bg-primary w-24 mb-4 hidden md:block"></div>
-</div>
-
-
-<div class="grid md:grid-cols-2 gap-8">
-  
-  <div onclick="openGallery('pasta')" 
-     class="group relative overflow-hidden rounded-xl aspect-[4/5] shadow-2xl cursor-pointer">
-    <img
-      src="imagenes/pasta.png"
-      alt="La Pasta"
-      data-alt="Plated artisan pasta with rich tomato sauce and herbs"
-      class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-    />
-    <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90"></div>
-    <div class="absolute bottom-0 left-0 p-8 md:p-10">
-      <h4 class="text-slate-900 dark:text-white text-3xl font-bold mb-3" data-i18n="specialties.pasta.title">
-        Nuestros Platos
-      </h4>
-      <p class="bg-slate-100/20 dark:bg-slate-800/20 inline-block px-2 py-1 rounded text-slate-800 dark:text-white md:text-slate-300 mb-6 max-w-sm font-normal md:font-light" data-i18n="specialties.pasta.desc">
-    House-made bronze-cut pasta tossed in sauces slow-cooked for hours using the season's finest imports.
-  </p>
-      <a href="javascript:void(0)" 
-   class="inline-flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform">
-        VIEW MENU <span class="material-symbols-outlined ml-2">arrow_forward</span>
-      </a>
+    <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-4">
+      <div class="max-w-xl">
+        <h2 class="text-accent-gold text-sm tracking-[0.3em] uppercase mb-2 font-semibold" data-i18n="specialties.label">
+          Our Signatures
+        </h2>
+        <h3 class="text-4xl md:text-5xl font-bold dark:text-white" data-i18n="specialties.title">
+          Crafted by Hand, <br /> Perfected by Fire
+        </h3>
+      </div>
+      <div class="h-1 bg-primary w-24 mb-4 hidden md:block"></div>
     </div>
-  </div>
 
-  <div onclick="openGallery('pizza')" 
-     class="group relative overflow-hidden rounded-xl aspect-[4/5] shadow-2xl cursor-pointer">
-    <img
-      src="imagenes/pizza-formaggi.png"
-      alt="La Pizza"
-      data-alt="Traditional Neapolitan pizza with leopard spotting on crust"
-      class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-    />
-    <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90"></div>
-    <div class="absolute bottom-0 left-0 p-8 md:p-10">
-      <h4 class="text-slate-900 dark:text-white text-3xl font-bold mb-3" data-i18n="specialties.pizza.title">
-        La Pizza
-      </h4>
-      <p class="bg-slate-100/20 dark:bg-slate-800/20 inline-block px-2 py-1 rounded text-slate-800 dark:text-white md:text-slate-300 mb-6 max-w-sm font-normal md:font-light" data-i18n="specialties.pizza.desc">
-    72-hour cold fermented dough, San Marzano tomatoes, and hand-stretched mozzarella baked at 450°C.
-  </p>
-      <a href="javascript:void(0)" 
-   class="inline-flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform">
-        VIEW PIZZA MENU <span class="material-symbols-outlined ml-2">arrow_forward</span>
-      </a>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div onclick="openGallery('pasta')" class="group relative overflow-hidden rounded-xl aspect-[4/5] shadow-2xl cursor-pointer">
+        <img src="imagenes/pasta.png" alt="La Pasta" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+        <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90"></div>
+        <div class="absolute bottom-0 left-0 p-8 md:p-10 flex flex-col items-start">
+          <h4 class="text-slate-900 dark:text-white text-3xl font-bold mb-3" data-i18n="specialties.pasta.title">
+            Nuestros Platos
+          </h4>
+          <p class="bg-slate-100/20 dark:bg-slate-800/20 inline-block px-2 py-1 rounded text-slate-800 dark:text-white md:text-slate-300 mb-6 max-w-sm font-normal md:font-light" data-i18n="specialties.pasta.desc">
+            House-made bronze-cut pasta tossed in sauces slow-cooked for hours using the season's finest imports.
+          </p>
+          <span class="inline-flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform">
+            VIEW MENU <span class="material-symbols-outlined ml-2">arrow_forward</span>
+          </span>
+        </div>
+      </div> <div onclick="openGallery('pizza')" class="group relative overflow-hidden rounded-xl aspect-[4/5] shadow-2xl cursor-pointer">
+        <img src="imagenes/pizza-formaggi.png" alt="La Pizza" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+        <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90"></div>
+        <div class="absolute bottom-0 left-0 p-8 md:p-10 flex flex-col items-start">
+          <h4 class="text-slate-900 dark:text-white text-3xl font-bold mb-3" data-i18n="specialties.pizza.title">
+            La Pizza
+          </h4>
+          <p class="bg-slate-100/20 dark:bg-slate-800/20 inline-block px-2 py-1 rounded text-slate-800 dark:text-white md:text-slate-300 mb-6 max-w-sm font-normal md:font-light" data-i18n="specialties.pizza.desc">
+            72-hour cold fermented dough, San Marzano tomatoes, and hand-stretched mozzarella baked at 450°C.
+          </p>
+          <span class="inline-flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform">
+            VIEW PIZZA MENU <span class="material-symbols-outlined ml-2">arrow_forward</span>
+          </span>
         </div>
       </div>
-
+      
     </div>
   </div>
 </section>
