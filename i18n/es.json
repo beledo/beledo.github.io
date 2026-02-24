@@ -66,5 +66,25 @@
   },
   "whatsapp": {
     "tooltip": "Chatea con nosotros por WhatsApp"
+  },
+  "faq": {
+  "label": "Información Útil",
+  "title": "Preguntas Frecuentes",
+  "payments": {
+    "title": "Pagos con Tarjeta",
+    "desc": "Aceptamos pagos con tarjeta de crédito o débito para consumos a partir de 30€."
+  },
+  "access": {
+    "title": "Accesibilidad",
+    "desc": "Debido a la arquitectura de nuestro local, lamentablemente no contamos con acceso adaptado para sillas de ruedas."
+  },
+  "pets": {
+    "title": "Mascotas",
+    "desc": "Para garantizar la comodidad de todos nuestros comensales durante el servicio, no se permite el ingreso con mascotas."
+  },
+  "smoking": {
+    "title": "Espacio sin Humo",
+    "desc": "Somos un establecimiento 100% libre de humo. No está permitido fumar en ninguna de nuestras instalaciones."
   }
+}
 }
