@@ -3,47 +3,47 @@
     "specialties": "Specialità",
     "menu": "Menù",
     "reviews": "Recensioni",
-    "contact": "Contatto",
+    "contact": "Contatti",
     "reserve": "PRENOTA UN TAVOLO",
     "language": "Lingua"
   },
   "hero": {
     "est": "Dal 2022 · Mallorca",
-    "title1": "Forno Autentico.",
-    "title2": "Eleganza Moderna.",
-    "subtitle": "Scopri l'anima dell'Italia attraverso i nostri forni a legna artigianali e ricette tramandate da generazioni.",
-    "ctaMenu": "Scopri il Menù",
+    "title1": "Nonna Giustina",
+    "title2": "",
+    "subtitle": "Scopri l’anima dell’Italia: autentica cucina casalinga in un ambiente caldo e familiare.",
+    "ctaMenu": "Vedi Menù",
     "ctaStory": "La Nostra Storia"
   },
   "specialties": {
     "label": "Le Nostre Specialità",
-    "title": "Fatto a Mano, Perfezionato dal Fuoco",
+    "title": "Donna Amalia incontra il Nord",
     "pizza": {
       "title": "La Pizza",
-      "desc": "Impasto fermentato 72 ore, pomodori San Marzano e mozzarella fresca cotta a 450°C.",
-      "link": "VEDI MENÙ PIZZA"
+      "desc": "Le nostre pizze sono preparate secondo la tradizione italiana, con impasto artigianale a lunga lievitazione, ingredienti freschi e una cottura perfetta che garantisce l’equilibrio ideale tra consistenza e sapore. Croccanti fuori, leggere dentro e sempre autentiche.",
+      "link": "VEDI MENÙ PIZZE"
     },
     "pasta": {
       "title": "I Nostri Piatti",
-      "desc": "Pasta fatta in casa con sughi preparati lentamente con ingredienti stagionali selezionati.",
+      "desc": "Ogni piatto nasce dalla tradizione e dall’amore per la cucina italiana. Sapori che ricordano le ricette della nonna, ingredienti selezionati e cura in ogni dettaglio per rendere ogni boccone un’esperienza calda, autentica e indimenticabile.",
       "link": "VEDI MENÙ"
     }
   },
   "atmosphere": {
-    "title": "L'Atmosfera"
+    "title": "Il Nostro Ristorante"
   },
   "reviews": {
     "label": "Testimonianze",
-    "title": "Cosa dicono i nostri ospiti",
-    "subtitle": "Offriamo un'esperienza culinaria indimenticabile. Valutato 4.9/5 stelle.",
-    "reviewUs": "Lascia una recensione su",
-    "review1": "“Un posto accogliente con proprietari fantastici — ti senti come a casa.”",
-    "review2": "“Servizio eccellente e molto personalizzato, piatti abbondanti e deliziosi.”"
+    "title": "Cosa Dicono i Nostri Clienti",
+    "subtitle": "Siamo orgogliosi di offrire un’esperienza culinaria indimenticabile. Valutati 4,9/5 stelle su tutte le principali piattaforme.",
+    "reviewUs": "Lasciaci una recensione su",
+    "review1": "“Un posto molto accogliente con proprietari incredibili — ti senti come a casa mentre gusti il loro cibo meraviglioso.”",
+    "review2": "“Servizio eccellente e molto personalizzato, gestito direttamente dai proprietari. Porzioni abbondanti e tutto delizioso. Un luogo tranquillo e familiare.”"
   },
   "contact": {
-    "label": "Contatto",
-    "title": "Hai una domanda o richiesta?",
-    "subtitle": "Per prenotazioni o richieste particolari, compila il modulo e ti risponderemo al più presto.",
+    "label": "Contatti",
+    "title": "Hai una domanda o una richiesta?",
+    "subtitle": "Che sia per prenotare un tavolo, chiedere informazioni sulle allergie o semplicemente salutarci, compila il modulo e il nostro team ti risponderà presto.",
     "phone": "Telefono",
     "email": "Email"
   },
@@ -56,12 +56,12 @@
     "send": "INVIA MESSAGGIO"
   },
   "footer": {
-    "description": "Portiamo i veri sapori italiani sulla tua tavola.",
-    "hours": "Orari di Apertura",
+    "description": "Portiamo gli autentici sapori dell’Italia sulla tua tavola. Vivi la vera esperienza della cucina italiana nel cuore della città.",
+    "hours": "Orari",
     "links": "Link Rapidi",
     "location": "Posizione",
     "rights": "© 2026 Nonna Giustina. Tutti i diritti riservati.",
-    "privacy": "Privacy Policy",
+    "privacy": "Politica sulla Privacy",
     "terms": "Termini di Servizio"
   },
   "whatsapp": {
