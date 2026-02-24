@@ -66,5 +66,25 @@
   },
   "whatsapp": {
     "tooltip": "Chat with us on WhatsApp"
+  },
+  "faq": {
+  "label": "Useful Information",
+  "title": "Frequently Asked Questions",
+  "payments": {
+    "title": "Card Payments",
+    "desc": "We accept credit or debit card payments for orders over 30€."
+  },
+  "access": {
+    "title": "Accessibility",
+    "desc": "Due to the architecture of our building, we unfortunately do not have wheelchair access."
+  },
+  "pets": {
+    "title": "Pets",
+    "desc": "To ensure the comfort of all our guests during service, pets are not allowed inside."
+  },
+  "smoking": {
+    "title": "Smoke-Free Environment",
+    "desc": "We are a 100% smoke-free establishment. Smoking is not permitted anywhere on our premises."
   }
+}
 }
