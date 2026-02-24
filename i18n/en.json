@@ -4,46 +4,46 @@
     "menu": "Menu",
     "reviews": "Reviews",
     "contact": "Contact",
-    "reserve": "RESERVE A TABLE",
+    "reserve": "BOOK A TABLE",
     "language": "Language"
   },
   "hero": {
-    "est": "Est. 2022 · Mallorca",
-    "title1": "Authentic Hearth.",
-    "title2": "Modern Elegance.",
-    "subtitle": "Experience the soul of Italy through our artisanal wood-fired ovens and generations of treasured family recipes.",
-    "ctaMenu": "Explore Menu",
+    "est": "Since 2022 · Mallorca",
+    "title1": "Nonna Giustina",
+    "title2": "",
+    "subtitle": "Discover the soul of Italy: authentic homemade cuisine in a warm and welcoming atmosphere.",
+    "ctaMenu": "View Menu",
     "ctaStory": "Our Story"
   },
   "specialties": {
-    "label": "Our Signatures",
-    "title": "Crafted by Hand, Perfected by Fire",
+    "label": "Our Specialties",
+    "title": "Donna Amalia incontra il Nord",
     "pizza": {
-      "title": "La Pizza",
-      "desc": "72-hour cold fermented dough, San Marzano tomatoes, and hand-stretched mozzarella baked at 450°C.",
+      "title": "Pizza",
+      "desc": "Our pizzas are prepared following Italian tradition, with handcrafted long-fermentation dough, fresh ingredients, and perfect baking that achieves the ideal balance between texture and flavor. Crispy on the outside, light on the inside, and always authentic.",
       "link": "VIEW PIZZA MENU"
     },
     "pasta": {
       "title": "Our Dishes",
-      "desc": "House-made pasta paired with slow-cooked sauces prepared with the finest seasonal ingredients.",
+      "desc": "Each dish is born from tradition and love for Italian cuisine. Flavors reminiscent of nonna’s recipes, carefully selected ingredients, and attention to every detail to ensure every bite is a warm, authentic, and memorable experience.",
       "link": "VIEW MENU"
     }
   },
   "atmosphere": {
-    "title": "The Atmosphere"
+    "title": "Our Restaurant"
   },
   "reviews": {
     "label": "Testimonials",
-    "title": "What our guests are saying",
-    "subtitle": "We pride ourselves on delivering an unforgettable culinary experience. Rated 4.9/5 stars across major platforms.",
-    "reviewUs": "Review us on",
-    "review1": "“A very cozy place with amazing owners — you feel right at home while enjoying wonderful food.”",
-    "review2": "“Excellent service, very personalized and run by the owners themselves. Generous portions and everything absolutely delicious.”"
+    "title": "What Our Guests Say",
+    "subtitle": "We are proud to offer an unforgettable culinary experience. Rated 4.9/5 stars across major platforms.",
+    "reviewUs": "Leave us a review on",
+    "review1": "“A very cozy place with incredible owners — you feel at home while enjoying their wonderful food.”",
+    "review2": "“Excellent and highly personalized service, run by the owners themselves. Generous portions and everything is delicious. A calm and family-friendly place.”"
   },
   "contact": {
-    "label": "Get in Touch",
-    "title": "Have a question or request?",
-    "subtitle": "Whether you'd like to reserve a table, discuss dietary concerns, or simply say hello, fill out the form and our team will respond shortly.",
+    "label": "Contact",
+    "title": "Do you have a question or request?",
+    "subtitle": "Whether you want to book a table, ask about allergies, or simply say hello, fill out the form and our team will get back to you soon.",
     "phone": "Phone",
     "email": "Email"
   },
@@ -56,11 +56,11 @@
     "send": "SEND MESSAGE"
   },
   "footer": {
-    "description": "Bringing authentic Italian flavors to your table. Experience true Italian dining in the heart of the city.",
+    "description": "Bringing authentic Italian flavors to your table. Experience true Italian cuisine in the heart of the city.",
     "hours": "Opening Hours",
     "links": "Quick Links",
     "location": "Location",
-    "rights": "© 2026 Nonna Giustina. All Rights Reserved.",
+    "rights": "© 2026 Nonna Giustina. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
