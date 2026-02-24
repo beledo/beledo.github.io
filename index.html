@@ -464,15 +464,32 @@ let currentIndex = 0;
 const modal = document.getElementById("gallery-modal");
 const galleryImage = document.getElementById("gallery-image");
 
-// ==========================
-// ABRIR GALERÍA
-// ==========================
-
 function openGallery(type) {
+
+  // 1️⃣ Asignar galería primero
   currentGallery = galleries[type];
   currentIndex = 0;
 
+  // 2️⃣ Mostrar primera imagen
   galleryImage.src = currentGallery[currentIndex];
+
+  // 3️⃣ Precargar siguiente (si existe)
+  if (currentGallery.length > 1) {
+    const preload = new Image();
+    preload.src = currentGallery[1];
+  }
+
+  // 4️⃣ Bloquear scroll
+  document.body.style.overflow = "hidden";
+
+  // 5️⃣ Mostrar modal con animación
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+
+  setTimeout(() => {
+    modal.classList.remove("opacity-0");
+  }, 10);
+}
 
   // bloquear scroll del fondo
   document.body.style.overflow = "hidden";
