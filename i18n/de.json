@@ -1,7 +1,7 @@
 {
   "nav": {
     "specialties": "Spezialitäten",
-    "menu": "Speisekarte",
+    "menu": "Menü",
     "reviews": "Bewertungen",
     "contact": "Kontakt",
     "reserve": "TISCH RESERVIEREN",
@@ -9,41 +9,41 @@
   },
   "hero": {
     "est": "Seit 2022 · Mallorca",
-    "title1": "Authentischer Ofen.",
-    "title2": "Moderne Eleganz.",
-    "subtitle": "Erleben Sie die Seele Italiens durch unsere handwerklichen Holzöfen und über Generationen weitergegebene Familienrezepte.",
-    "ctaMenu": "Speisekarte ansehen",
+    "title1": "Nonna Giustina",
+    "title2": "",
+    "subtitle": "Entdecken Sie die Seele Italiens: authentische Hausmannskost in einer warmen und familiären Atmosphäre.",
+    "ctaMenu": "Menü ansehen",
     "ctaStory": "Unsere Geschichte"
   },
   "specialties": {
     "label": "Unsere Spezialitäten",
-    "title": "Von Hand gefertigt, im Feuer perfektioniert",
+    "title": "Donna Amalia incontra il Nord",
     "pizza": {
-      "title": "La Pizza",
-      "desc": "72 Stunden kalt fermentierter Teig, San-Marzano-Tomaten und handgezogener Mozzarella bei 450°C gebacken.",
-      "link": "PIZZA-MENÜ ANSEHEN"
+      "title": "Pizza",
+      "desc": "Unsere Pizzen werden nach italienischer Tradition zubereitet – mit handgemachtem, langsam fermentiertem Teig, frischen Zutaten und perfektem Backen für das ideale Gleichgewicht zwischen Textur und Geschmack. Außen knusprig, innen luftig und immer authentisch.",
+      "link": "PIZZAMENÜ ANSEHEN"
     },
     "pasta": {
       "title": "Unsere Gerichte",
-      "desc": "Hausgemachte Pasta mit langsam gekochten Saucen aus feinsten saisonalen Zutaten.",
+      "desc": "Jedes Gericht entsteht aus Tradition und Liebe zur italienischen Küche. Aromen, die an die Rezepte der Nonna erinnern, sorgfältig ausgewählte Zutaten und Liebe zum Detail machen jeden Bissen zu einem warmen, authentischen und unvergesslichen Erlebnis.",
       "link": "MENÜ ANSEHEN"
     }
   },
   "atmosphere": {
-    "title": "Das Ambiente"
+    "title": "Unser Restaurant"
   },
   "reviews": {
-    "label": "Bewertungen",
+    "label": "Kundenstimmen",
     "title": "Was unsere Gäste sagen",
-    "subtitle": "Wir sind stolz darauf, ein unvergessliches kulinarisches Erlebnis zu bieten. Mit 4,9/5 Sternen bewertet.",
-    "reviewUs": "Bewerten Sie uns auf",
-    "review1": "„Ein sehr gemütlicher Ort mit wunderbaren Besitzern — man fühlt sich wie zu Hause.“",
-    "review2": "„Ausgezeichneter Service, sehr persönlich und von den Eigentümern selbst geführt.“"
+    "subtitle": "Wir sind stolz darauf, ein unvergessliches kulinarisches Erlebnis zu bieten. Bewertet mit 4,9/5 Sternen auf allen wichtigen Plattformen.",
+    "reviewUs": "Hinterlassen Sie uns eine Bewertung auf",
+    "review1": "„Ein sehr gemütlicher Ort mit unglaublichen Besitzern — man fühlt sich wie zu Hause und genießt wunderbares Essen.“",
+    "review2": "„Ausgezeichneter und sehr persönlicher Service, direkt von den Besitzern geführt. Großzügige Portionen und alles ist köstlich. Ein ruhiger und familiärer Ort.“"
   },
   "contact": {
     "label": "Kontakt",
     "title": "Haben Sie eine Frage oder Anfrage?",
-    "subtitle": "Ob Reservierung oder spezielle Anfrage – füllen Sie das Formular aus und wir melden uns schnellstmöglich.",
+    "subtitle": "Ob Reservierung, Fragen zu Allergien oder einfach ein Gruß – füllen Sie das Formular aus und unser Team meldet sich bald bei Ihnen.",
     "phone": "Telefon",
     "email": "E-Mail"
   },
@@ -56,12 +56,12 @@
     "send": "NACHRICHT SENDEN"
   },
   "footer": {
-    "description": "Authentische italienische Küche im Herzen der Stadt.",
+    "description": "Wir bringen authentische italienische Aromen auf Ihren Tisch. Erleben Sie echte italienische Küche im Herzen der Stadt.",
     "hours": "Öffnungszeiten",
-    "links": "Schnellzugriff",
+    "links": "Schnellzugriffe",
     "location": "Standort",
     "rights": "© 2026 Nonna Giustina. Alle Rechte vorbehalten.",
-    "privacy": "Datenschutz",
+    "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen"
   },
   "whatsapp": {
