@@ -1,70 +1,70 @@
 {
-  "nav": {
-    "specialties": "Especialidades",
-    "menu": "Menú",
-    "reviews": "Reseñas",
-    "contact": "Contacto",
-    "reserve": "RESERVAR MESA",
-    "language": "Idioma"
-  },
-  "hero": {
-    "est": "Desde 2022 · Mallorca",
-    "title1": "Horno Auténtico.",
-    "title2": "Elegancia Moderna.",
-    "subtitle": "Descubre el alma de Italia a través de nuestros hornos de leña artesanales y recetas familiares transmitidas por generaciones.",
-    "ctaMenu": "Ver Menú",
-    "ctaStory": "Nuestra Historia"
-  },
-  "specialties": {
-    "label": "Nuestras Especialidades",
-    "title": "Hecho a Mano, Perfeccionado al Fuego",
-    "pizza": {
-      "title": "La Pizza",
-      "desc": "Masa fermentada en frío durante 72 horas, tomates San Marzano y mozzarella estirada a mano horneada a 450°C.",
-      "link": "VER MENÚ DE PIZZAS"
-    },
-    "pasta": {
-      "title": "Nuestros Platos",
-      "desc": "Pasta artesanal elaborada en casa y acompañada de salsas cocinadas lentamente con los mejores ingredientes de temporada.",
-      "link": "VER MENÚ"
-    }
-  },
-  "atmosphere": {
-    "title": "La Atmósfera"
-  },
-  "reviews": {
-    "label": "Testimonios",
-    "title": "Lo que dicen nuestros clientes",
-    "subtitle": "Nos enorgullece ofrecer una experiencia culinaria inolvidable. Valorados con 4.9/5 estrellas en todas las plataformas principales.",
-    "reviewUs": "Déjanos tu reseña en",
-    "review1": "“Un lugar muy acogedor con propietarios increíbles — te sientes como en casa mientras disfrutas de su maravillosa comida.”",
-    "review2": "“Servicio excelente y muy personalizado, atendido por los propios dueños. Los platos son generosos y todo está delicioso. Es un lugar tranquilo y familiar.”"
-  },
-  "contact": {
-    "label": "Contacto",
-    "title": "¿Tienes una pregunta o solicitud?",
-    "subtitle": "Ya sea para reservar, consultar sobre alergias o simplemente saludarnos, completa el formulario y nuestro equipo te responderá pronto.",
-    "phone": "Teléfono",
-    "email": "Email"
-  },
-  "form": {
-    "name": "Nombre",
-    "lastname": "Apellido",
-    "mail": "Correo",
-    "phone": "Teléfono",
-    "message": "Mensaje",
-    "send": "ENVIAR MENSAJE"
-  },
-  "footer": {
-    "description": "Llevando los auténticos sabores de Italia a tu mesa. Vive la experiencia de la verdadera cocina italiana en el corazón de la ciudad.",
-    "hours": "Horario",
-    "links": "Enlaces Rápidos",
-    "location": "Ubicación",
-    "rights": "© 2026 Nonna Giustina. Todos los derechos reservados.",
-    "privacy": "Política de Privacidad",
-    "terms": "Términos del Servicio"
-  },
-  "whatsapp": {
-    "tooltip": "Chatea con nosotros por WhatsApp"
-  }
-}
+ "nav": {
+ "specialties": "Especialidades",
+ "menu": "Menú",
+ "reviews": "Reseñas",
+ "contact": "Contacto",
+ "reserve": "RESERVAR MESA",
+ "language": "Idioma"
+ },
+ "hero": {
+ "est": "Desde 2022 · Mallorca",
+ "title1": "Nonna Giustina",
+ "title2": "",
+ "subtitle": "Descubre el alma de Italia: auténtica cocina casera en un ambiente cálido y familiar.",
+ "ctaMenu": "Ver Menú",
+ "ctaStory": "Nuestra Historia"
+ },
+ "specialties": {
+ "label": "Nuestras Especialidades",
+ "title": "Donna Amalia incontra il Nord",
+ "pizza": {
+ "title": "La Pizza",
+ "desc": "Nuestras pizzas se elaboran siguiendo la tradición italiana, con masa artesanal de larga fermentación, ingredientes frescos y una cocción perfecta que consigue un equilibrio ideal entre textura y sabor. Crujientes por fuera, ligeras por dentro y siempre auténticas.",
+ "link": "VER MENÚ DE PIZZAS"
+ },
+ "pasta": {
+ "title": "Nuestros Platos",
+ "desc": "Cada plato nace de la tradición y el cariño por la cocina italiana. Sabores que recuerdan a las recetas de la nonna, ingredientes seleccionados y una preparación cuidada al detalle para que cada bocado sea una experiencia cálida, auténtica y memorable.",
+ "link": "VER MENÚ"
+ }
+ },
+ "atmosphere": {
+ "title": "Nuestro Restaurante"
+ },
+ "reviews": {
+ "label": "Testimonios",
+ "title": "Lo que dicen nuestros clientes",
+ "subtitle": "Nos enorgullece ofrecer una experiencia culinaria inolvidable. Valorados con 4.9/5 estrellas en todas las plataformas principales.",
+ "reviewUs": "Déjanos tu reseña en",
+ "review1": "“Un lugar muy acogedor con propietarios increíbles — te sientes como en casa mientras disfrutas de su maravillosa comida.”",
+ "review2": "“Servicio excelente y muy personalizado, atendido por los propios dueños. Los platos son generosos y todo está delicioso. Es un lugar tranquilo y familiar.”"
+ },
+ "contact": {
+ "label": "Contacto",
+ "title": "¿Tienes una pregunta o solicitud?",
+ "subtitle": "Ya sea para reservar, consultar sobre alergias o simplemente saludarnos, completa el formulario y nuestro equipo te responderá pronto.",
+ "phone": "Teléfono",
+ "email": "Email"
+ },
+ "form": {
+ "name": "Nombre",
+ "lastname": "Apellido",
+ "mail": "Correo",
+ "phone": "Teléfono",
+ "message": "Mensaje",
+ "send": "ENVIAR MENSAJE"
+ },
+ "footer": {
+ "description": "Llevando los auténticos sabores de Italia a tu mesa. Vive la experiencia de la verdadera cocina italiana en el corazón de la ciudad.",
+ "hours": "Horario",
+ "links": "Enlaces Rápidos",
+ "location": "Ubicación",
+ "rights": "© 2026 Nonna Giustina. Todos los derechos reservados.",
+ "privacy": "Política de Privacidad",
+ "terms": "Términos del Servicio"
+ },
+ "whatsapp": {
+ "tooltip": "Chatea con nosotros por WhatsApp"
+ }
+ }
