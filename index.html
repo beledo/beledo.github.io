@@ -790,6 +790,32 @@ function handleSwipe() {
   }
 }
 
+// --- LÓGICA DEL BOTÓN COMPARTIR ---
+const shareBtn = document.getElementById('share-btn');
+
+if (shareBtn) {
+    shareBtn.addEventListener('click', async () => {
+        const shareData = {
+            title: 'Nonna Giustina',
+            text: 'Descubre la auténtica cocina italiana en Palma de Mallorca.',
+            url: window.location.href
+        };
+
+        try {
+            // Intenta usar la función nativa de compartir (Móviles)
+            if (navigator.share) {
+                await navigator.share(shareData);
+            } else {
+                // Si no puede compartir (PC/Navegadores antiguos), copia al portapapeles
+                await navigator.clipboard.writeText(window.location.href);
+                alert('Enlace copiado al portapapeles');
+            }
+        } catch (err) {
+            console.log('Error al compartir:', err);
+        }
+    });
+}
+    
 </script>
 
 
