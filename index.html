@@ -6,11 +6,11 @@
     <title>Portfolio Octavio Beledo - Desarrollador de Software</title>
     <meta name="description" content="Portfolio de Octavio Beledo, estudiante de la Tecnicatura en Desarrollo Web y desarrollador Freelancer">
 
-    <link rel="stylesheet" href="../beledo.github.io/styles.css">
+    <link rel="stylesheet" href="styles.css">
 
     <meta property="og:title" content="Portfolio Octavio Beledo - Desarrollador de Software">
     <meta property="og:description" content="Portfolio de Octavio Beledo, estudiante de la Tecnicatura en Desarrollo Web y desarrollador Freelancer">
-    <meta property="og:image" content="/image/yo.jpg">
+    <meta property="og:image" content="imagenes/yo.jpeg">
     <link rel="canonical" href="https://beledodev.com">
 
     <meta name="theme-color" content="#046bd2">
@@ -19,17 +19,24 @@
 
 <header>
     <h1 id="logo">Octavio Beledo 💻</h1>
-    <nav>
-        <a class="link" href="#experiencia">Experiencia</a>
-        <a class="link" href="#proyectos">Proyectos</a>
-        <a class="link" href="https://www.linkedin.com/in/octaviobeledo/" target="_blank">LinkedIn</a>
+
+    <button class="hamburger" id="hamburger">
+        ☰
+    </button>
+
+    <nav id="nav">
+        <div class="nav-links">
+            <a class="link" href="#experiencia">Experiencia</a>
+            <a class="link" href="#proyectos">Proyectos</a>
+            <a class="link" href="https://www.linkedin.com/in/octaviobeledo/" target="_blank">LinkedIn</a>
+        </div>
     </nav>    
 </header>
 
 <main>
     <section id="intro">
     <p class="hero-text">Estudiante de la <strong>Tecnicatura en Desarrollo Web.</strong> Apasionado por la ciberseguridad y la creación de Software.</p>
-    <img id="photo-image" title="Foto de Octavio" alt="Fotografía de Octavio Beledo" src="../beledo.github.io/imagenes/yo.jpeg">
+    <img id="photo-image" title="Foto de Octavio" alt="Fotografía de Octavio Beledo" src="imagenes/yo.jpeg">
     
     <a href="https://github.com/beledo" target="_blank" class="github-btn">
         <img src="https://skillicons.dev/icons?i=github" alt="GitHub Logo">
@@ -53,9 +60,7 @@
 
     <section id="tech-fav">
         <aside>
-            <header>
                 <h2 style="font-size: 30px; margin-bottom: 20px;">Tecnologías favoritas</h2>
-            </header>
             <ol class="tech-grid">
                 <li><img src="https://skillicons.dev/icons?i=html" alt="HTML"><span>HTML</span></li>
                 <li><img src="https://skillicons.dev/icons?i=css" alt="CSS"><span>CSS</span></li>
@@ -161,6 +166,14 @@
     </div>
 </footer>
 
-<script src="../beledo.github.io/script.js"></script>
+<script>
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("nav");
+
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+</script>
+
 </body>
 </html>
