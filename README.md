@@ -1,2 +1,2 @@
-# beledo.github.io
-Portfolio Octavio Beledo
+# Portfolio
+Portfolio de Octavio Beledo
