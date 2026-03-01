@@ -1,0 +1,381 @@
+/* =========================================
+   VARIABLES Y CONFIGURACIÓN APPLE PRO
+   ========================================= */
+:root {
+    --bg-color: #000000;
+    --surface-color: rgba(28, 28, 30, 0.6);
+    --text-main: #f5f5f7;
+    --text-muted: #86868b;
+    --primary-color: #ffffff;
+    --accent-blue: #0a84ff;
+    --border-color: rgba(255, 255, 255, 0.12);
+    --font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* RESET GENERAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(-45deg, #000000, #1a1a1a, #020910, #000000);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: var(--text-main);
+    font-family: var(--font-family);
+    line-height: 1.5;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* =========================================
+   HEADER & NAVEGACIÓN (100% ANCHO)
+   ========================================= */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero-text{
+    font-size: 26px;
+}
+
+header h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    opacity: 0.7;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+nav a:hover {
+    opacity: 1;
+    color: var(--accent-blue);
+}
+
+/* =========================================
+   CONTENEDOR Y ESTRUCTURA
+   ========================================= */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* Separación entre secciones */
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--primary-color);
+}
+
+/* =========================================
+   ELEMENTOS DE CONTENIDO
+   ========================================= */
+#photo-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 40px;
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+/* Listas */
+ul, ol {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.list-item {
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: var(--primary-color);
+    color: #000 !important; /* Texto negro sobre fondo blanco */
+    text-decoration: none;
+    padding: 16px 100px;
+    border-radius: 980px; /* Estilo píldora Apple */
+    font-weight: 600;
+    margin: 20px auto;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: fit-content;
+}
+
+.github-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.github-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Grid de Tecnologías */
+
+.tech-grid {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.tech-grid li {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-color);
+    padding: 24px;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    transition: 0.4s ease;
+}
+
+.tech-grid li:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--accent-blue);
+    transform: translateY(-5px);
+}
+
+.tech-grid img { width: 40px; height: 40px; }
+
+/* Grid de Proyectos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+article {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 32px;
+    backdrop-filter: blur(10px);
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+article:hover {
+    transform: translateY(-10px);
+    background: rgba(44, 44, 46, 0.8);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+article h4 { font-size: 1.4rem; margin-bottom: 12px; }
+article p { color: var(--text-muted); font-size: 1rem; margin-bottom: 24px; }
+article footer small {
+    color: var(--accent-blue);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+}
+
+/* =========================================
+   FORMULARIO (CORREGIDO RESPONSIVE)
+   ========================================= */
+form {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    padding: 40px;
+    border-radius: 28px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Espacio entre los grupos del formulario */
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Evita que los inputs se peguen */
+}
+
+legend {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--accent-blue);
+    margin-bottom: 15px;
+    padding: 0 5px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+input, select {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 16px;
+    color: #fff;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--accent-blue);
+}
+
+button[type="submit"], #show, #hide {
+    background: var(--primary-color);
+    color: #000;
+    border: none;
+    padding: 18px;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.02);
+    filter: brightness(0.9);
+}
+
+/* =========================================
+   VERSION MÓVIL (MEDIA QUERIES)
+   ========================================= */
+@media (max-width: 600px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
+    main {
+        padding: 40px 20px;
+        gap: 60px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    #photo-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    form {
+        padding: 30px 20px; /* Menos padding en móvil para ganar espacio */
+        gap: 20px;
+    }
+
+    input, select {
+        padding: 14px; /* Inputs ligeramente más pequeños */
+    }
+
+    article {
+        padding: 24px;
+    }
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
